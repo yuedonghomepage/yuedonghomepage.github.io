@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<title>Interactive Curation of Datasets for Training and Refining
+Generative Models</title>
+	<link rel="stylesheet" type="text/css" href="../../main.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+	<div class="PublishInfo">
+			Published in
+			<span class="BookTitle">Computer Graphics Forum, Volume 38 (2019), Number 7 	(Pacific Graphics 2019)</span>
+	</div>
+	<div class="TitleBar">
+	<h1>Interactive Curation of Datasets </br>for Training and Refining
+Generative Models</h1>
+	</div>
+	<div class="AuthorBar">
+	<ul class="AuthorList">
+			<li>
+				<span class="Author"><a href="" target="_blank">
+				Wenjie Ye</a><sup>1,2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://yuedong.shading.me/" target="_blank">
+				Yue Dong</a><sup>2</sup>
+			</li>
+			<li>
+				<span class="Author"><a href="http://www.cs.wm.edu/~ppeers/" target="_blank">
+				Pieter Peers</a><sup>3</sup></span>
+			</li>
+		</ul>
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Affiliation"><sup>1</sup>Tsinghua University</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>2</sup>Microsof Research Asia</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>3</sup> College of William & Mary</span>
+			</li>
+		</ul>   
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="teaser.jpg" alt="rendering resutls" class="PaperFigure" />
+	</div>
+    <p class="FigureDescription">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Examples of Generative Adversarial Networks (GANs) learned from user-curated training sets of (a) rough stone textures, (b)
+rusted metal </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;textures, (c) images of bedrooms with twin beds, and (d) portraits of happy faces. Each of these GANs are trained on datasets
+curated using our </br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;interactive system in approximately 12 (stone) to 35 (face) minutes starting from a larger more general dataset of stones,
+metals, bedrooms, and</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;faces respectively.</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+We present a novel interactive learning-based method for curating datasets using user-defined criteria for training and refining
+Generative Adversarial Networks. We employ a novel batch-mode active learning strategy to progressively select small batches
+of candidate exemplars for which the user is asked to indicate whether they match the, possibly subjective, selection criteria.
+After each batch, a classifier that models the user’s intent is refined and subsequently used to select the next batch of candidates.
+After the selection process ends, the final classifier, trained with limited but adaptively selected training data, is used to sift
+through the large collection of input exemplars to extract a sufficiently large subset for training or refining the generative model
+that matches the user’s selection criteria. A key distinguishing feature of our system is that we do not assume that the user can
+always make a firm binary decision (i.e., “meets” or “does not meet” the selection criteria) for each candidate exemplar, and
+we allow the user to label an exemplar as “undecided”. We rely on a non-binary query-by-committee strategy to distinguish
+between the user’s uncertainty and the trained classifier’s uncertainty, and develop a novel disagreement distance metric to
+encourage a diverse candidate set. In addition, a number of optimization strategies are employed to achieve an interactive
+experience. We demonstrate our interactive curation system on several applications related to training or refining generative
+models: training a Generative Adversarial Network that meets a user-defined criteria, adjusting the output distribution of an
+existing generative model, and removing unwanted samples from a generative model.
+
+ </p>
+   </div>
+
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">Interactive systems and tools</p>
+
+    <h2 class="PaperSectionTitle">Paper and video</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="curation.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 24.0 MB</span>             
+           </li>
+			</a>
+        </ul>
+    </div>
+    <h2 class="PaperSectionTitle">Trained model and code</h2>
+
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="https://github.com/ywjleft/Dataset_Curation_for_GAN">
+            <li>
+                <span class="FileTitle">GitHub Repo</span>
+                <span class="FileDesc">Code and model</span>             
+            </li>
+			</a>
+        </ul>
+    </div>
+
+    </td>
+    <td>
+	<h2 class="PaperSectionTitle">Acknowledgements</h2>
+    <p class="Acknowledgements">We thank the reviewers for their insightful
+feedback. Pieter Peers was partially supported by NSF grant IIS-
+1350323 and a gift from Nvidia.
+</p>
+
+
+
+	</td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>

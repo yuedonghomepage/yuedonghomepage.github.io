@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+    <head>
+
+<style type="text/css">
+<!--
+
+body {
+    background: #fff;
+    font-family: Helvetica, Arial, sans-serif;    
+    color: #000;
+    margin: 0;
+}
+
+p {
+    text-align: justify;
+    margin-top: 0;
+}
+
+#page {
+    padding: 50px 75px 0px 75px;
+    max-width: 780px;
+}
+
+#header {
+    margin-bottom: 2em;
+}
+
+#teaser {
+    clear: both;
+    padding: 1.5em 0;
+}
+#where {
+    clear: both;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 500%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1#title {
+    font-size: 300%;
+}
+
+td.file {
+    font-weight: bold;
+    padding: 0 1em;
+}
+
+div.author {
+    float: left;
+    margin: 0.3em 0.75em 0.3em 0em;
+}
+
+div.author a:visited {
+    font-weight: bold;
+}
+
+
+h1 span.subtitle {
+    font-size: 75%;
+    color: #aaa;
+}
+
+h1.post {
+    margin-bottom: 20px;
+    font-size: 400%;
+}
+
+
+h3 {
+    clear: both;
+    font-size: 150%;
+    margin-top: 0.75em;
+    margin-bottom: 5px;
+    line-height: 150%;
+}
+
+h3 a {
+    color: #69341d;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #3333CC;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #3333CC;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FF0000;
+}
+
+.post-footer {
+    font-weight: bold;
+    color: #CCC;
+}
+
+#footer {
+    margin-top: 50px;
+    background: #e0e0d7;
+    border-top: solid 1px #000;
+    padding: 5px 75px;
+}
+#footer table {
+    width: 95%;
+    color: #000;
+    margin: 0;
+    font-size: 75%;
+}
+#footer th {
+    text-align: left;
+}
+
+#about {
+    width: 20em;
+}
+
+.bibtex {
+font-size: 12px;
+}
+
+
+-->
+</style>
+        <title>Manifold Bootstrapping for SVBRDF Capture</title>
+        </head>
+    
+    <body>
+        <div id="page">
+            <div id="header">
+
+                <h1 id="title">
+                    Manifold Bootstrapping for SVBRDF Capture 
+                </h1>
+                
+                <div class="author">
+                    <a href="http://www.dongallen.com" target="_blank">Yue Dong</a>
+                  </div>
+
+                <div class="author">
+                    <a href="http://www.jiapingwang.com/" target="_blank">Jiaping Wang</a>
+                </div>
+
+                <div class="author">
+                    <a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">Xin Tong</a>
+                </div>
+
+                 <div class="author">
+                    <a href="http://research.microsoft.com/~johnsny/" target="_blank">John Snyder</a>
+                  </div>
+
+                   <div class="author">
+                    <a href="http://www.ben-ezra.org/" target="_blank">Moshe Ben-Ezra</a>
+                  </div>
+
+                  <div class="author">
+                    <a>Yanxiang Lan</a>
+                  </div>
+
+                <div class="author">
+                    <a href="http://research.microsoft.com/users/bainguo/" target="_blank">Baining Guo</a>
+                </div>
+ 
+                                
+                <div id="teaser" align="center">
+                  <video src="bootstrap.mp4" controls="controls">
+                  <img src="bootstrap.jpg" />
+                  </video>
+                </div>
+
+                <div id="where">ACM SIGGRAPH 2010</div>
+
+            </div>
+            
+            <div id="content">
+                <div id="abstract">
+                    <h3>Abstract</h3>
+                    <p>Manifold bootstrapping is a new method for data-driven modeling of real-world, spatially-varying reflectance, based on the idea that reflectance over a given material sample forms a low-dimensional manifold. It provides a high-resolution result in both the spatial and angular domains by decomposing reflectance measurement into two lower-dimensional phases. The first acquires representatives of high angular dimension but sampled sparsely over the surface, while the second acquires keys of low angular dimension but sampled densely over the surface.
+<br/><br/>
+We develop a hand-held, high-speed BRDF capturing device for phase one measurements. A condenser-based optical setup collects a dense hemisphere of rays emanating from a single point on the target sample as it is manually scanned over it, yielding 10 BRDF point measurements per second. Lighting directions from 6 LEDs are applied at each measurement; these are amplified to a full 4D BRDF using the general (NDF-tabulated) microfacet model. The second phase captures N=20-200 images of the entire sample from a fixed view and lit by a varying area source. We show that the resulting N-dimensional keys capture much of the distance information in the original BRDF space, so that they effectively discriminate among representatives, though they lack sufficient angular detail to reconstruct the SVBRDF by themselves. At each surface position, a local linear combination of a small number of neighboring representatives is computed to match each key, yielding a highresolution SVBRDF. A quick capture session (10-20 minutes) on simple devices yields results showing sharp and anisotropic specularity and rich spatial detail.
+</p>
+                </div>
+                <div id="files">
+
+                    <h3>Files</h3>
+                    <table>
+                        <tr>
+                            <td class="file">Paper</td>
+                            <td><a href="bootstrap.pdf" target="_blank">
+				PDF</a> (3 MB)</td>
+                        </tr>
+
+                        <tr>
+                            <td class="file">Video</td>
+                            <td><a href="bootstrap.mp4" target="_blank">
+				H264 Mp4</a> (50 MB)</td>
+                        </tr>
+
+                    </table>
+                </div>
+ <div id="acknowledgments">
+                    <h3>Acknowledgments</h3>
+                    <p>We would like to thank Paul Debevec for providing the HDR images for rendering, and Steve Lin for video dubbing. The authors
+are grateful to the anonymous reviewers for their helpful suggestions and comments. 
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

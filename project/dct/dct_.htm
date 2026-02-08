@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+    <head>
+
+<style type="text/css">
+<!--
+
+body {
+    background: #fff;
+    font-family: Helvetica, Arial, sans-serif;    
+    color: #000;
+    margin: 0;
+}
+
+p {
+    text-align: justify;
+    margin-top: 0;
+}
+
+#page {
+    padding: 50px 75px 0px 75px;
+    max-width: 780px;
+}
+
+#header {
+    margin-bottom: 2em;
+}
+
+#teaser {
+    clear: both;
+    padding: 1.5em 0;
+}
+#where {
+    clear: both;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 500%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1#title {
+    font-size: 300%;
+}
+
+td.file {
+    font-weight: bold;
+    padding: 0 1em;
+}
+
+div.author {
+    float: left;
+    margin: 0.3em 0.75em 0.3em 0em;
+}
+
+div.author a:visited {
+    font-weight: bold;
+}
+
+
+h1 span.subtitle {
+    font-size: 75%;
+    color: #aaa;
+}
+
+h1.post {
+    margin-bottom: 20px;
+    font-size: 400%;
+}
+
+
+h3 {
+    clear: both;
+    font-size: 150%;
+    margin-top: 0.75em;
+    margin-bottom: 5px;
+    line-height: 150%;
+}
+
+h3 a {
+    color: #69341d;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #3333CC;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #3333CC;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FF0000;
+}
+
+.post-footer {
+    font-weight: bold;
+    color: #CCC;
+}
+
+#footer {
+    margin-top: 50px;
+    background: #e0e0d7;
+    border-top: solid 1px #000;
+    padding: 5px 75px;
+}
+#footer table {
+    width: 95%;
+    color: #000;
+    margin: 0;
+    font-size: 75%;
+}
+#footer th {
+    text-align: left;
+}
+
+#about {
+    width: 20em;
+}
+
+.bibtex {
+font-size: 12px;
+}
+
+
+-->
+</style>
+        <title>Diffusion Curve Textures for Resolution Independent Texture Mapping</title>
+        </head>
+    
+    <body>
+        <div id="page">
+            <div id="header">
+
+                <h1 id="title">
+                    Diffusion Curve Textures for Resolution Independent Texture Mapping
+                </h1>
+							
+				<div class="author">
+                    <a href="http://sunxin.name/" target="_blank">Xin Sun</a>
+                  </div>
+
+				  				  
+                <div class="author">
+                    <a href="http://www.guofuxie.com/" target="_blank">Guofu Xie</a>
+                  </div>
+				  
+				<div class="author">
+                    <a href="http://www.dongallen.com" target="_blank">Yue Dong</a>
+                  </div>
+				<div class="author">
+                    <a href="http://research.microsoft.com/%7Estevelin/" target="_blank">Stephen Lin</a>
+                  </div>
+
+				<div class="author">
+                    <a href="http://weiweixu.net/" target="_blank">Weiwei Xu</a>
+                  </div>
+				<div class="author">
+                    <a href="http://lcs.ios.ac.cn/~whn" target="_blank">Wencheng Wang</a>
+                  </div>
+				  
+                <div class="author">
+                    <a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">Xin Tong</a>
+                </div>
+
+                <div class="author">
+                    <a href="http://research.microsoft.com/users/bainguo/" target="_blank">Baining Guo</a>
+                </div>
+ 
+                                
+                <div id="teaser" align="center">
+                    <img src="dct.jpg" />
+                </div>
+
+                <div id="where">ACM SIGGRAPH 2012</div>
+
+            </div>
+            
+            <div id="content">
+                <div id="abstract">
+                    <h3>Abstract</h3>
+                    <p>We introduce a vector representation called diffusion curve textures for mapping diffusion curve images (DCI) onto arbitrary surfaces. In contrast to the original implicit representation of DCIs [Orzan et al. 2008], where determining a single texture value requires iterative computation of the entire DCI via the Poisson equation, diffusion curve textures provide an explicit representation from which the texture value at any point can be solved directly, while preserving the compactness and resolution independence of diffusion curves. This is achieved through a formulation of the DCI diffusion process in terms of Green's functions. This formulation furthermore allows the texture value of any rectangular region (e.g. pixel area) to be solved inclosed form, which facilitates anti-aliasing. We develop a GPU algorithm that renders anti-aliased diffusion curve textures in real time, and demonstrate the effectiveness of this method through high quality renderings with detailed control curves and color variations.
+</p>
+                </div>
+                <div id="files">
+
+                    <h3>Files</h3>
+                    <table>
+                        <tr>
+                            <td class="file">Paper</td>
+                            <td><a href="vectex.pdf" target="_blank">
+				PDF</a> (10 MB)</td>
+                        </tr>
+
+                        <tr>
+                            <td class="file">Video</td>
+                            <td><a href="vertex_divx.avi" target="_blank">
+				DivX Avi</a> (76 MB)</td>
+                        </tr>
+
+                    </table>
+                </div>
+ <div id="acknowledgments">
+                    <h3>Acknowledgments</h3>
+                    <p>We would like to thank the reviewers for their valuable comments. The authors also want to thank ShuiTian Yuan and Yuan Tian for 3D modeling and textuer design. Guofu Xie and Wencheng Wang were partially supported by NSF of China (60833007).
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

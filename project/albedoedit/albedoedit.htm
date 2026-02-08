@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<title>Measurement-based Editing of Diffuse Albedo with Consistent Interreflections</title>
+	<link rel="stylesheet" type="text/css" href="../../main.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+	<div class="PublishInfo">
+			Published in
+			<span class="BookTitle">ACM Transactions on Graphics, Volume 34, Issue 4 (SIGGRAPH 2015)</span>
+	</div>
+	<div class="TitleBar">
+	<h1>Measurement-based Editing of Diffuse Albedo with<br/> Consistent Interreflections</h1>
+	</div>
+	<div class="AuthorBar">
+	<ul class="AuthorList">
+			<li>
+				<span class="Author"><a href="http://www.cs.wm.edu/~bdong/" target="_blank">
+				Bo Dong</a><sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author">
+				Yue Dong</a><sup>2</sup>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">
+				Xin Tong</a><sup>2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://www.cs.wm.edu/~ppeers/" target="_blank">
+				Pieter Peers</a><sup>1</sup></span>
+			</li>
+		</ul>
+
+		<ul class="AuthorList">
+					<li>
+				<span class="Affiliation"><sup>1</sup>College of William & Mary</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>2</sup>Microsoft Research</span>
+			</li>
+		</ul>   
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="teaser.jpg" alt="rendering resutls" class="PaperFigure" />
+	</div>
+    <p class="FigureDescription">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Relighting of various scenes using light transport captured by our method from a small number of images.</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+We present a novel measurement-based method for editing the
+albedo of diffuse surfaces with consistent interreflections in a photograph of a scene under natural lighting. Key to our method is a
+novel technique for decomposing a photograph of a scene in several
+images that encode how much of the observed radiance has interacted a specified number of times with the target diffuse surface.
+Altering the albedo of the target area is then simply a weighted sum
+of the decomposed components. We estimate the interaction components by recursively applying the light transport operator and for-
+mulate the resulting radiance in each recursion as a linear expression in terms of the relevant interaction components. Our method
+only requires a camera-projector pair, and the number of required
+measurements per scene is linearly proportional to the decomposition degree for a single target area. Our method does not impose
+restrictions on the lighting or on the material properties in the unaltered part of the scene. Furthermore, we extend our method to
+accommodate editing of the albedo in multiple target areas with
+consistent interreflections and we introduce a prediction model for
+reducing the acquisition cost. We demonstrate our method on a variety of scenes and validate the accuracy on both synthetic and real
+examples.</p>
+   </div>
+
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+		
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">Diffuse Albedo Editing, Interreflection Decomposition, Computational Illumination</p>
+
+    <h2 class="PaperSectionTitle">Downloads</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="albedoedit.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 69.4 MB</span>             
+            </li>
+			</a>
+			<!---
+			<a href="neuralibr.mov">
+            <li>
+                <span class="FileTitle">Video</span>
+                <span class="FileDesc">h.264 | 173 MB</span>
+            </li>
+			</a>
+
+			<a href="afm.pptx">
+            <li>
+                <span class="FileTitle">Slides</span>
+                <span class="FileDesc">.pptx | 81.7 MB</span>
+            </li>
+			</a>
+			-->
+        </ul>
+    </div>
+	</td>
+	<td>
+	<h2 class="PaperSectionTitle">Acknowledgements</h2>
+    <p class="Acknowledgements">We wish to thank the reviewers for their constuctive feedback, and
+Victoria Cooper and Kathleen Moore for proofreading. This work
+was partially funded by NSF grants: IIS-1217765 and IIS-1350323,
+and a gift from Google.
+</p>
+
+	</td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<title>Reflectance Scanning: Estimating Shading Frame and BRDF with Generalized Linear Light Sources</title>
+	<link rel="stylesheet" type="text/css" href="../../main.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+	<div class="PublishInfo">
+			Published in
+			<span class="BookTitle">ACM Transactions on Graphics, Volume 33, Issue 4 (SIGGRAPH Asia 2014)</span>
+	</div>
+	<div class="TitleBar">
+	<h1>Reflectance Scanning: Estimating Shading Frame and BRDF with Generalized Linear Light Sources</h1>
+	</div>
+	<div class="AuthorBar">
+	<ul class="AuthorList">
+			<li>
+				<span class="Author">
+				Guojun Chen<sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author">
+				Yue Dong</a><sup>2,</sup>
+			</li>
+			<li>
+				<span class="Author"><a href="http://www.cs.wm.edu/~ppeers/" target="_blank">
+				Pieter Peers</a><sup>3</sup></span>
+			</li>
+			<li>
+				<span class="Author">
+				Jiawan Zhang<sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">
+				Xin Tong</a><sup>1,2</sup></span>
+			</li>
+		</ul>
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Affiliation"><sup>1</sup>Tianjin University</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>2</sup>Microsoft Research</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>3</sup>College of William & Mary</span>
+			</li>
+		</ul>   
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="teaser.jpg" alt="rendering resutls" class="PaperFigure" />
+	</div>
+    <p class="FigureDescription"> Rendering of SVBRDFs reconstructed by our method. (a) Satin with complex needlework. (b) Velvet with complex reflectance.
+(c) Brushed metal exhibiting rich tangent variations. (d) Anisotropic paper with bumpy geometric details.</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+We present a generalized linear light source solution to estimate both the local shading frame and anisotropic surface reflectance of a planar spatially varying material sample.
+We generalize linear light source reflectometry by modulating the intensity along the linear light source, and show that a constant and two sinusoidal lighting patterns are sufficient for estimating the local shading frame and anisotropic surface reflectance.  We propose a novel reconstruction algorithm based on the key observation that after factoring out the tangent rotation, the anisotropic surface reflectance lies in a low rank subspace. We exploit the differences in tangent rotation between surface points to infer the low rank subspace and fit each surface point's reflectance function in the projected low rank subspace to the observations. We propose two prototype acquisition devices for capturing surface reflectance that differ on whether the camera is fixed with respect to the linear light source or fixed with respect to the material sample.
+We demonstrate convincing results obtained from reflectance scans of surfaces with different reflectance and shading frame variations.  
+
+  </div>
+
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+		
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">BRDF, anisotropic, linear light source</p>
+
+    <h2 class="PaperSectionTitle">Downloads</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="refscan.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 13.0 MB</span>             
+            </li>
+			</a>
+			<a href="refscan.mov">
+            <li>
+                <span class="FileTitle">Video</span>
+                <span class="FileDesc">h.264 | 74.6 MB</span>
+            </li>
+			</a>
+        </ul>
+    </div>
+	</td>
+	<td>
+	<h2 class="PaperSectionTitle">Acknowledgements</h2>
+    <p class="Acknowledgements">We wish to thank the reviewers for their constuctive feedback.
+Pieter Peers was partially funded by NSF grants: IIS-1217765, IIS-1350323, and a gift from Google.
+</p>
+
+	
+	</td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>

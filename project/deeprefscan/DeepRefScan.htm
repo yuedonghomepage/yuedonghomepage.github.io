@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <title>Deep Reflectance Scanning: Recovering Spatially-varying Material Appearance from a Flash-lit Video Sequence</title>
+    <link rel="stylesheet" type="text/css" href="DeepRefScan.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+    <div class="PublishInfo">
+            Published in
+            <span class="BookTitle">Computer Graphics Forum, Volumn 40, Issue 6</span>
+    </div>
+    <div class="TitleBar">
+    <h1>Deep Reflectance Scanning: Recovering Spatially-varying Material Appearance from a Flash-lit Video Sequence</h1>
+    </div>
+    <div class="AuthorBar">
+    <ul class="AuthorList">
+            <li>
+                <span class="Author">
+                Wenjie Ye</a><sup>1,2</sup></span>
+            </li>
+            <li>
+                <span class="Author"><a href="http://yuedong.shading.me/" target="_blank">
+                Yue Dong</a><sup>2</sup>
+            </li>
+            <li>
+                <span class="Author"><a href="http://www.cs.wm.edu/~ppeers/" target="_blank">
+                Pieter Peers</a><sup>3</sup></span>
+            </li>
+            <li>
+                <span class="Author">
+                Baining Guo</a><sup>2</sup></span>
+            </li>
+        </ul>
+
+        <ul class="AuthorList">
+            <li>
+                <span class="Affiliation"><sup>1</sup>Tsinghua University</span>
+            </li>
+            <li>
+                <span class="Affiliation"><sup>2</sup>Microsoft Research Asia</span>
+            </li>
+            <li>
+                <span class="Affiliation"><sup>3</sup>College of William & Mary</span>
+            </li>
+        </ul>   
+    </div>
+    
+    <div class="TeaserBar">
+    <img src="overview.png" alt="Overview" class="PaperFigure" />
+    </div>
+    <p class="FigureDescription">
+        Overview of our method. Given a guidance image and an input video, we first compute a warp function between each input video frames and the guidance image by estimating per-frame optical flow. Next, we extract SVBRDF feature vectors for each input frame and align (warp) the feature maps. Finally, the SVBRDF is reconstructed based on aggregated (max-pooled) feature maps.
+    </p>
+    <div class="AbstractBar">
+    <h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+        In this paper we present a novel method for recovering high-resolution spatially-varying isotropic surface reflectance of a planar exemplar from a flash-lit close-up video sequence captured with a regular hand-held mobile phone.  We dot not require careful calibration of the camera and lighting parameters, but instead compute a per-pixel flow map using a deep neural network to align the input video frames.  For each video frame, we also extract the reflectance parameters, and warp the neural reflectance features directly using the per-pixel flow, and subsequently pool the warped features.  Our method facilitates convenient hand-held acquisition of spatially-varying surface reflectance with commodity hardware by non-expert users.  Furthermore, our method enables aggregation of reflectance features from surface points visible in only a subset of the captured video frames, enabling the creation of high-resolution reflectance maps that exceed the native camera resolution. We demonstrate and validate our method on a variety of synthetic and real-world spatially-varying materials.
+    </p>
+   </div>
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+        
+    <h2 class="PaperSectionTitle">Paper</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+            <a href="DeepRefScan.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 267 MB</span>             
+            </li>
+            </a>
+        </ul>
+    </div>
+
+
+    <h2 class="PaperSectionTitle">Implementation</h2>
+    <div class="PaperDownloadList">
+        <ul>
+            <a href="https://github.com/ywjleft/SVBRDF_from_Video">
+            <li>
+                <span class="FileTitle">Source code</span>
+                <span class="FileDesc">GitHub</span>
+            </li>
+            </a>
+        </ul>
+    </div>
+    <p class="MainText">
+    Our implementation is based on TensorFlow. Please visit the GitHub page to see details. 
+    </p>
+
+    </td>
+
+    <td>
+    <h2 class="PaperSectionTitle">Data downloads</h2>
+    <div class="PaperDownloadList">
+        <ul>
+            <a href="https://igpublicshare.z20.web.core.windows.net/DeepRefScan/data/trained_models.zip">
+            <li>
+                <span class="FileTitle">Trained models</span>
+                <span class="FileDesc">.zip | 675 MB</span>             
+            </li>
+            </a>
+            <a href="https://igpublicshare.z20.web.core.windows.net/DeepRefScan/data/example_test_data.zip">
+            <li>
+                <span class="FileTitle">Example test data</span>
+                <span class="FileDesc">.zip | 4.32 GB</span>             
+            </li>
+            </a>
+        </ul>
+    </div>
+    <p class="MainTextBold">
+        Use of the released models and data is restricted to academic research purposes only. 
+    </p>
+
+    <!--
+    <h2 class="PaperSectionTitle">References</h2>
+    <p class="MainText">
+    [1] <span class="RefName"> Wenjie Ye, Yue Dong, Pieter Peers, Baining Guo</span>. Deep Reflectance Scanning: Recovering Spatially-varying Material Appearance from a Flash-lit Video Sequence. <i>Computer Graphics Forum. ??, ?? (2021)</i> <br/>
+
+    </p>
+    -->
+
+    <h2 class="PaperSectionTitle">Acknowledgements</h2>
+    <p class="MainText">We would like to thank the reviewers for their constructive feedback. Pieter Peers was partially supported by NSF grant IIS-1350323 and a gift from Nvidia.</p>
+
+
+
+    </td>
+    </tr>
+    </table>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<title>Learning Non-Lambertian Object Intrinsics across ShapeNet Categories</title>
+	<link rel="stylesheet" type="text/css" href="../../main.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+	<div class="PublishInfo">
+			Published in
+			<span class="BookTitle">CVPR 2017</span>
+	</div>
+	<div class="TitleBar">
+	<h1>Learning Non-Lambertian Object Intrinsics across ShapeNet Categories</h1>
+	</div>
+	<div class="AuthorBar">
+	<ul class="AuthorList">
+			<li>
+				<span class="Author"><a>
+				Jian Shi</a><sup>1,2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a>
+				Yue Dong</a><sup>2</sup>
+			</li>
+			<li>
+				<span class="Author"><a href="http://www.cs.wm.edu/~ppeers/" target="_blank">
+				Hao Su</a><sup>3</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">
+				Stella X. Yu</a><sup>4</sup></span>
+			</li>
+		</ul>
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Affiliation"><sup>1</sup>University of Chinese Academy of Sciences</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>2</sup>Microsoft Research</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>3</sup>Stanford University</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>3</sup>UC Berkeley / ICSI</span>
+			</li>
+		</ul>   
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="teaser.jpg" alt="rendering resutls" class="PaperFigure" />
+	</div>
+    <p class="FigureDescription">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intrinsic decomposition results validated with ground truth.</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+&nbsp;&nbsp;&nbsp;&nbsp;We consider the non-Lambertian object intrinsic problem
+of recovering diffuse albedo, shading, and specular
+highlights from a single image of an object.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;We build a large-scale object intrinsics database based
+on existing 3D models in the ShapeNet database. Rendered
+with realistic environment maps, millions of synthetic
+images of objects and their corresponding albedo, shading,
+and specular ground-truth images are used to train an
+encoder-decoder CNN. Once trained, the network can decompose
+an image into the product of albedo and shading
+components, along with an additive specular component.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Our CNN delivers accurate and sharp results in this
+classical inverse problem of computer vision, sharp details
+attributed to skip layer connections at corresponding resolutions
+from the encoder to the decoder. Benchmarked on
+our ShapeNet and MIT intrinsics datasets, our model consistently
+outperforms the state-of-the-art by a large margin.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;We train and test our CNN on different object categories.
+Perhaps surprising especially from the CNN classification
+perspective, our intrinsics CNN generalizes very
+well across categories. Our analysis shows that feature
+learning at the encoder stage is more crucial for developing
+a universal representation across categories.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;We apply our synthetic data trained model to images and
+videos downloaded from the internet, and observe robust
+and realistic intrinsics results. Quality non-Lambertian intrinsics
+could open up many interesting applications such
+as image-based albedo and specular editing.
+ </p>
+   </div>
+
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+		
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">Intrinsic image decomposition, Deep learning</p>
+
+    
+	</td>
+	<td>
+
+<h2 class="PaperSectionTitle">Downloads</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="s_intrinsic.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 33.0 MB</span>             
+            </li>
+			</a>
+			<a href="https://github.com/shi-jian/shapenet-intrinsics/">
+            <li>
+                <span class="FileTitle">Source Code</span>
+                <span class="FileDesc">GitHub</span>
+            </li>
+			</a>
+        </ul>
+    </div>
+
+	</td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>

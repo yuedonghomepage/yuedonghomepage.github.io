@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<title>Manifold Bootstrapping for SVBRDF Capture</title>
+	<link rel="stylesheet" type="text/css" href="../../main.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+	<div class="PublishInfo">
+			Published in
+			<span class="BookTitle">ACM Transactions on Graphics, Volume 29, Issue 4 (SIGGRAPH 2010)</span>
+	</div>
+	<div class="TitleBar">
+	<h1>Manifold Bootstrapping for SVBRDF Capture</h1>
+	</div>
+	<div class="AuthorBar">
+
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Author">
+				Yue Dong</a><sup>1,</sup><sup>2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://www.jiapingwang.com/" target="_blank">
+				Jiaping Wang</a><sup>2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">
+				Xin Tong</a><sup>2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/~johnsny/" target="_blank">
+				John Snyder</a><sup>3</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://www.ben-ezra.org/" target="_blank">
+				Moshe Ben-Ezra</a><sup>3</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">
+				Yanxiang Lan</a><sup>1</sup></span>
+			</li>		
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/bainguo/" target="_blank">
+				Baining Guo</a><sup>1,</sup><sup>2</sup></span>
+			</li>
+		</ul>
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Affiliation"><sup>1</sup>Tsinghua University</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>2</sup>Microsoft Research Asia</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>3</sup>Microsoft Research</span>
+			</li>
+		</ul>   
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="teaser.png" alt="rendering resutls" class="PaperFigure" />
+	</div>
+    <p class="FigureDescription">Renderings of high-resolution SVBRDFs reconstructed by our method from two-phase, low-dimensional captured data: (a) anisotropic
+brushed metal, (b) satin with complex needlework, (c) wrinkled glossy paper, (d) weathered copper.</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+Manifold bootstrapping is a new method for data-driven modeling of real-world, spatially-varying reflectance, based on the idea that reflectance over a given material sample forms a low-dimensional manifold. It provides a high-resolution result in both the spatial and angular domains by decomposing reflectance measurement into two lower-dimensional phases. The first acquires representatives of high angular dimension but sampled sparsely over the surface, while the second acquires keys of low angular dimension but sampled densely over the surface.
+<br/><br/>
+We develop a hand-held, high-speed BRDF capturing device for phase one measurements. A condenser-based optical setup collects a dense hemisphere of rays emanating from a single point on the target sample as it is manually scanned over it, yielding 10 BRDF point measurements per second. Lighting directions from 6 LEDs are applied at each measurement; these are amplified to a full 4D BRDF using the general (NDF-tabulated) microfacet model. The second phase captures N=20-200 images of the entire sample from a fixed view and lit by a varying area source. We show that the resulting N-dimensional keys capture much of the distance information in the original BRDF space, so that they effectively discriminate among representatives, though they lack sufficient angular detail to reconstruct the SVBRDF by themselves. At each surface position, a local linear combination of a small number of neighboring representatives is computed to match each key, yielding a highresolution SVBRDF. A quick capture session (10-20 minutes) on simple devices yields results showing sharp and anisotropic specularity and rich spatial detail.
+</p>
+   </div>
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+		
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">SVBRDF, appearance capture</p>
+
+    <h2 class="PaperSectionTitle">Downloads</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="bootstrap.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 2.33 MB</span>             
+            </li>
+			</a>
+			<a href="bootstrap.mp4">
+            <li>
+                <span class="FileTitle">Video</span>
+                <span class="FileDesc">h.264 | 51.5 MB</span>
+            </li>
+			</a>
+        </ul>
+    </div>
+	
+	<h2 class="PaperSectionTitle">BibTex</h2>
+    <pre class="bibtex">
+@article{Dong:2010:MBS,
+ author = {Dong, Yue and Wang, Jiaping and Tong, Xin
+ and Snyder, John and Lan, Yanxiang and Ben-Ezra, 
+ Moshe and Guo, Baining},
+ title = {Manifold bootstrapping for SVBRDF capture},
+ journal = {ACM Trans. Graph.},
+ issue_date = {July 2010},
+ volume = {29},
+ number = {4},
+ month = jul,
+ year = {2010},
+ issn = {0730-0301},
+ pages = {98:1--98:10},
+ articleno = {98},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1778765.1778835},
+ doi = {10.1145/1778765.1778835},
+ acmid = {1778835},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+	</pre>
+
+	</td>
+	<td>
+	<h2 class="PaperSectionTitle">Acknowledgements</h2>
+    <p class="Acknowledgements">The authors would like to thank Steve Lin for paper proofreading and video dubbing. The authors
+are grateful to the anonymous reviewers for their helpful suggestions and comments.
+</p>
+
+	
+	</td>
+	</tr>
+	</table>
+
+	<div class="PaperVideoBar">
+	<video class="PaperVideo" src="bootstrap.mp4" controls="controls">
+	</div>
+</div>
+</body>
+</html>

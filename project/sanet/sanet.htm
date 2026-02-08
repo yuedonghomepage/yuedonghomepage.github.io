@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<title>Modeling Surface Appearance from a Single Photograph using Self-augmented Convolutional Neural Networks</title>
+	<link rel="stylesheet" type="text/css" href="sanet.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+	<div class="PublishInfo">
+			Published in
+			<span class="BookTitle">ACM Transactions on Graphics, Volume 36, Issue 4 (SIGGRAPH 2017)</span>
+	</div>
+	<div class="TitleBar">
+	<h1>Modeling Surface Appearance from a Single Photograph using Self-augmented Convolutional Neural Networks</h1>
+	</div>
+	<div class="AuthorBar">
+	<ul class="AuthorList">
+			<li>
+				<span class="Author"><a href="http://home.ustc.edu.cn/~pableeto/" target="_blank">
+				Xiao Li</a><sup>1,2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://yuedong.shading.me/" target="_blank">
+				Yue Dong</a><sup>2</sup>
+			</li>
+			<li>
+				<span class="Author"><a href="http://www.cs.wm.edu/~ppeers/" target="_blank">
+				Pieter Peers</a><sup>3</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">
+				Xin Tong</a><sup>2</sup></span>
+			</li>
+		</ul>
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Affiliation"><sup>1</sup>University of Science and Technology of China</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>2</sup>Microsof Research Asia</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>3</sup> College of William & Mary</span>
+			</li>
+		</ul>   
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="teaser.jpg" alt="rendering resutls" class="PaperFigure" />
+	</div>
+    <p class="FigureDescription">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Physically plausible spatially varying surface appearance estimated using the proposed SA-SVBRDF-net from a single photograph of planar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spatially
+varying plastic (a,b), wood (c) and metal (d) captured unknown natural lighting, and revisualized under a novel lighting condition.</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+ We present a convolutional neural network (CNN) based solution for
+    modeling physically plausible spatially varying surface
+    reflectance functions (SVBRDF) from a single photograph of a
+    planar material sample under unknown natural
+    illumination. Gathering a sufficiently large set of labeled
+    training pairs consisting of photographs of SVBRDF samples and
+    corresponding reflectance parameters, is a difficult and arduous
+    process.  To reduce the amount of required labeled training data,
+    we propose to leverage the appearance information embedded in
+    unlabeled images of spatially varying materials to self-augment
+    the training process. Starting from a coarse network obtained from
+    a small set of labeled training pairs, we estimate provisional
+    model parameters for each unlabeled training exemplar. Given this
+    provisional reflectance estimate, we then synthesize a novel
+    temporary labeled training pair by rendering the exact
+    corresponding image under a new lighting condition. After refining
+    the network using these additional training samples, we
+    re-estimate the provisional model parameters for the unlabeled
+    data and repeat the self-augmentation process until convergence.
+    We demonstrate the efficacy of the proposed network structure on
+    spatially varying wood, metal, and plastics, as well as thoroughly
+    validate the effectiveness of the self-augmentation training
+    process.
+ </p>
+   </div>
+
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+		
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">Appearance Modeling, SVBRDF, CNN</p>
+
+    <h2 class="PaperSectionTitle">Paper and video</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="sanet.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 13.4 MB</span>             
+            </li>
+			</a>
+			<a href="sanet.mov">
+            <li>
+                <span class="FileTitle">Video</span>
+                <span class="FileDesc">h.264 | 48.3 MB</span>
+            </li>
+			</a>
+			<a href=" ">
+            <li>
+                <span class="FileTitle">Slides</span>
+                <span class="FileDesc">.pptx | Comming soon</span>
+            </li>
+			</a>
+        </ul>
+    </div>
+    <h2 class="PaperSectionTitle">Trained model</h2>
+
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="./model/SA_SVBRDF_Net_Model.zip">
+            <li>
+                <span class="FileTitle">SA-SVBRDF-net</span>
+                <span class="FileDesc">.zip | 523 MB</span>             
+            </li>
+			</a>
+			<a href="./model/SA_BRDF_Net_Model.zip">
+            <li>
+                <span class="FileTitle">SA-BRDF-net</span>
+                <span class="FileDesc">.zip | 136 MB</span>
+            </li>
+			</a>
+        </ul>
+    </div>
+    <p class="MainText">
+    The trained models for SVBRDF-net and SA-SVBRDF-net are provided in the Caffe CNN format.
+    </p>
+
+    <h2 class="PaperSectionTitle">Dataset</h2>
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="./data/SA_SVBRDF_Net_Data.zip">
+            <li>
+                <span class="FileTitle">Dataset</span>
+                <span class="FileDesc">.zip | 2.49 GB</span>             
+            </li>
+			</a>
+            <a href="./data/lighting.zip">
+            <li>
+                <span class="FileTitle">Lighting Maps</span>
+                <span class="FileDesc">.zip | 410 MB</span>             
+            </li>
+            </a>
+        </ul>
+    </div>
+    <p class="MainText">
+    The data includes both labeled and unlabeled images for training and evaluation and environment maps for rendering.
+    Part of our training labeled training data was sourced from an online material repository [<a href="http://www.vray-materials.de/">vray-materials.de</a>], and the unlabeled training data is partially based on <a = href="http://opensurfaces.cs.cornell.edu/"> OpenSurfaces </a> [2]
+    </p>
+
+   <p class="MainTextBold">
+   Use of this training dataset is restricted to academic research purposes only. When using our dataset, please cite both our work [1], as well as <a = href="http://opensurfaces.cs.cornell.edu/"> OpenSurfaces </a> [2] as below:
+    </p>
+    <p class="MainText">
+    [1] <span class="RefName"> Xiao Li, Yue Dong, Pieter Peers, Xin Tong</span>. Modeling Surface Appearance from a Single Photograph using Self-augmented Convolutional Neural Networks. <i>ACM Trans. Grp. 36, 4 (July 2017), 45:1-45:11</i> <br/>
+[2] <span class="RefName"> Sean Bell, Paul Upchurch, Noah Snavely, and Kavita Bala</span>. 2013. OpenSurfaces: a richly annotated catalog of surface appearance. <i>ACM Trans. Graph. 32, 4 (July 2013), 111:1–111:17</i>.
+</p>
+
+	</td>
+	<td>
+
+
+    <h2 class="PaperSectionTitle">Implementation</h2>
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="https://github.com/msraig/self-augmented-net">
+            <li>
+                <span class="FileTitle">Source code</span>
+                <span class="FileDesc">GitHub</span>             
+            </li>
+			</a>
+        </ul>
+    </div>
+    <p class="MainText">
+    Our implementation is based on Caffe, all the training scripts are included in the source code file.
+	<p class="MainText">
+    For all the downloads, a detailed readme.txt file is included in the compressed zip file.
+
+    <h2 class="PaperSectionTitle">Errata</h2>
+    <p class="MainText"> Unfortunately, we found an error in the network structure illustration (Figure 2 in the paper). The correct network structures can be found <a href="network.pdf">here</a>, and the source code in the GitHub site is the correct implementation.
+</p>
+
+	<h2 class="PaperSectionTitle">Acknowledgements</h2>
+    <p class="MainText">We would like to thank the reviewers for their constructive feedback,
+and the Beijing Film Academy for their help in creating the SVBRDF datasets. Pieter Peers was partially supported by NSF grant IIS-1350323.
+</p>
+
+
+
+	</td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>

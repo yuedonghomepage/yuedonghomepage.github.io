@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+    <head>
+
+<style type="text/css">
+<!--
+
+body {
+    background: #fff;
+    font-family: Helvetica, Arial, sans-serif;    
+    color: #000;
+    margin: 0;
+}
+
+p {
+    text-align: justify;
+    margin-top: 0;
+}
+
+#page {
+    padding: 50px 75px 0px 75px;
+    max-width: 680px;
+}
+
+#header {
+    margin-bottom: 2em;
+}
+
+#teaser {
+    clear: both;
+    padding: 1.5em 0;
+}
+#where {
+    clear: both;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 500%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1#title {
+    font-size: 300%;
+}
+
+td.file {
+    font-weight: bold;
+    padding: 0 1em;
+}
+
+div.author {
+    float: left;
+    margin: 0.3em 0.75em 0.3em 0em;
+}
+
+div.author a:visited {
+    font-weight: bold;
+}
+
+
+h1 span.subtitle {
+    font-size: 75%;
+    color: #aaa;
+}
+
+h1.post {
+    margin-bottom: 20px;
+    font-size: 400%;
+}
+
+
+h3 {
+    clear: both;
+    font-size: 150%;
+    margin-top: 0.75em;
+    margin-bottom: 5px;
+    line-height: 150%;
+}
+
+h3 a {
+    color: #69341d;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #3333CC;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #3333CC;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FF0000;
+}
+
+.post-footer {
+    font-weight: bold;
+    color: #CCC;
+}
+
+#footer {
+    margin-top: 50px;
+    background: #e0e0d7;
+    border-top: solid 1px #000;
+    padding: 5px 75px;
+}
+#footer table {
+    width: 95%;
+    color: #000;
+    margin: 0;
+    font-size: 75%;
+}
+#footer th {
+    text-align: left;
+}
+
+#about {
+    width: 20em;
+}
+
+.bibtex {
+font-size: 12px;
+}
+
+
+-->
+</style>
+        <title>Lazy Solid Texture Synthesis</title>
+        </head>
+    
+    <body>
+        <div id="page">
+            <div id="header">
+
+                <h1 id="title">
+                    Lazy Solid Texture Synthesis
+                </h1>
+                
+                <div class="author">
+                    <a href="http://www.dongallen.com" target="_blank">Yue Dong</a>
+                </div>
+                <div class="author">
+	            <a href="http://www-sop.inria.fr/reves/personnel/Sylvain.Lefebvre/" target="_blank">Sylvain Lefebvre</a>
+	            </a>
+                </div>
+                <div class="author">
+                    <a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">Xin Tong</a>
+                </div>
+                <div class="author">
+	            <a href="http://www-sop.inria.fr/reves/George.Drettakis/" target="_blank">George Drettakis</a>
+                </div>
+ 
+                                
+                <div id="teaser" align="center">
+                    <img src="lazysyn.jpg" />
+                </div>
+
+                <div id="where">Eurographics Symposium on Rendering 2008</div>
+
+            </div>
+            
+            <div id="content">
+                <div id="abstract">
+                    <h3>Abstract</h3>
+                    <p>Existing solid texture synthesis algorithms generate a full volume of color content from a set of 2D example images.
+We introduce a new algorithm with the unique ability to restrict synthesis to a subset of the voxels, while enforcing
+spatial determinism. This is especially useful when texturing objects, since only a thick layer around the surface
+needs to be synthesized. A major difficulty lies in reducing the dependency chain of neighborhood matching, so
+that each voxel only depends on a small number of other voxels.
+<br>
+Our key idea is to synthesize a volume from a set of pre-computed 3D candidates, each being a triple of interleaved
+2D neighborhoods. We present an efficient algorithm to carefully select in a pre-process only those candidates
+forming consistent triples. This significantly reduces the search space during subsequent synthesis. The result is a
+new parallel, spatially deterministic solid texture synthesis algorithm which runs efficiently on the GPU.
+<br>
+Our approach generates high resolution solid textures on surfaces within seconds. Memory usage and synthesis
+time only depend on the output textured surface area. The GPU implementation of our method rapidly synthesizes
+new textures for the surfaces appearing when interactively breaking or cutting objects.
+</p>
+                </div>
+                <div id="files">
+
+                    <h3>Files</h3>
+                    <table>
+                        <tr>
+                            <td class="file">Paper</td>
+                            <td><a href="LazySyn_EGSR_paper.pdf" target="_blank">
+				PDF</a> (12 MB)</td>
+                        </tr>
+
+                        <tr>
+                            <td class="file">Video</td>
+                            <td><a href="LazySyn_EGSR_Video_DivX.avi" target="_blank">
+				DivX Avi</a> (46 MB)</td>
+
+                            <td><a href="http://www.youtube.com/watch?v=7l_EQ4nYlog" target="_blank">
+				YouTube</a></td>
+                        </tr>
+
+			<tr>
+                            <td class="file">Talk</td>
+                            <td><a href="LazySyn_talk.pdf" target="_blank">
+				PDF</a> (1.2 MB)</td>
+                        </tr>
+
+			<tr>
+                            <td class="file">Data</td>
+                            <td><a href="data.zip" target="_blank">
+				ZIP</a> (38 MB)</td>
+                        </tr>
+                    </table>
+                </div>
+
+		<div id="bibtex">
+			<h3>BibTex reference</h3>
+
+<pre class = "bibtex">
+@InProceedings\{DLTD08,
+  author    = "Dong, Yue and Lefebvre, Sylvain and Tong, Xin and Drettakis, George",
+  title     = "Lazy Solid Texture Synthesis ",
+  booktitle = "Computer Graphics Forum (Proceedings of the Eurographics Symposium on Rendering)",
+  year      = "2008",
+}
+
+</pre>
+		</div>
+
+                <div id="acknowledgments">
+                    <h3>Acknowledgments</h3>
+                    <p>We would like to thank Baining Guo, Li-Yi Wei, and the
+anonymous reviewers for their help in improving the paper,
+as well as Su Wang for 3D modeling. This work is partly
+supported by the NSFC (National Natural Science Foundation
+of China), grant 10547002.</p>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

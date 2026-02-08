@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<title>Lazy Solid Texture Synthesis</title>
+	<link rel="stylesheet" type="text/css" href="../../main.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+	<div class="PublishInfo">
+			Published in
+			<span class="BookTitle">Proceedings of the 19th Eurographics conference on Rendering (EGSR 2008)</span>
+	</div>
+	<div class="TitleBar">
+	<h1>Lazy Solid Texture Synthesis</h1>
+	</div>
+	<div class="AuthorBar">
+
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Author">
+				Yue Dong</a><sup>1,</sup><sup>2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://www-sop.inria.fr/reves/personnel/Sylvain.Lefebvre/" target="_blank">
+				Sylvain Lefebvre</a><sup>3</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">
+				Xin Tong</a><sup>2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://www-sop.inria.fr/reves/George.Drettakis/" target="_blank">
+				George Drettakis</a><sup>3</sup></span>
+			</li>
+		</ul>
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Affiliation"><sup>1</sup>Tsinghua University</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>2</sup>Microsoft Research Asia</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>3</sup>REVES / INRIA Sophia-Antipolis</span>
+			</li>
+		</ul>   
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="teaser.png" alt="synthesis resutls" class="PaperFigure" />
+	</div>
+    <p class="FigureDescription">Lazy solid synthesis starts from 2D images and synthesizes a solid texture on a surface. Only the required parts of the
+volume are effectively synthesized. a) A gargoyle textured by a 10243volume. b) Thanks to spatial determinism, the object may
+be broken and the interior textured in a consistent manner. c) 0.42% of the voxels are synthesized by our algorithm, requiring
+only 5.4 seconds for synthesis and 17.9MB of storage, instead of 3GB for the full volume. d) Our approach enables interactive
+cutting of objects with on demand synthesis for the appearing surfaces. New textures are synthesized in about 8 milliseconds.</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">Existing solid texture synthesis algorithms generate a full volume of color content from a set of 2D example images.
+We introduce a new algorithm with the unique ability to restrict synthesis to a subset of the voxels, while enforcing
+spatial determinism. This is especially useful when texturing objects, since only a thick layer around the surface
+needs to be synthesized. A major difficulty lies in reducing the dependency chain of neighborhood matching, so
+that each voxel only depends on a small number of other voxels.
+<br>
+Our key idea is to synthesize a volume from a set of pre-computed 3D candidates, each being a triple of interleaved
+2D neighborhoods. We present an efficient algorithm to carefully select in a pre-process only those candidates
+forming consistent triples. This significantly reduces the search space during subsequent synthesis. The result is a
+new parallel, spatially deterministic solid texture synthesis algorithm which runs efficiently on the GPU.
+<br>
+Our approach generates high resolution solid textures on surfaces within seconds. Memory usage and synthesis
+time only depend on the output textured surface area. The GPU implementation of our method rapidly synthesizes
+new textures for the surfaces appearing when interactively breaking or cutting objects.
+</p>
+   </div>
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+		
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">Texture synthesis, solid texture</p>
+
+    <h2 class="PaperSectionTitle">Downloads</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="LazySyn_EGSR_paper.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 11.7 MB</span>             
+            </li>
+			</a>
+			<a href="LazySyn_EGSR_Video_DivX.mp4">
+            <li>
+                <span class="FileTitle">Video</span>
+                <span class="FileDesc">DivX | 45.4 MB</span>
+            </li>
+			</a>
+        </ul>
+    </div>
+	
+	<h2 class="PaperSectionTitle">BibTex</h2>
+    <pre class="bibtex">
+@inproceedings{Dong:2008:LST,
+ author = {Dong, Yue and Lefebvre, Sylvain 
+ and Tong, Xin and Drettakis, George},
+ title = {Lazy solid texture synthesis},
+ booktitle = {Proceedings of the Nineteenth
+ Eurographics conference on Rendering},
+ series = {EGSR'08},
+ year = {2008},
+ location = {Sarajevo, Bosnia and Herzegovina},
+ pages = {1165--1174},
+ numpages = {10},
+ doi = {10.1111/j.1467-8659.2008.01254.x},
+ acmid = {2383479},
+ publisher = {Eurographics Association},
+ address = {Aire-la-Ville, Switzerland, Switzerland},
+} 
+	</pre>
+
+	</td>
+	<td>
+	<h2 class="PaperSectionTitle">Acknowledgements</h2>
+    <p class="Acknowledgements">We would like to thank Baining Guo, Li-Yi Wei, and the
+anonymous reviewers for their help in improving the paper,
+as well as Su Wang for 3D modeling. This work is partly
+supported by the NSFC (National Natural Science Foundation of China), grant 10547002.
+</p>
+	
+	</td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>

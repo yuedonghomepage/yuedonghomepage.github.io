@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+    <head>
+
+<style type="text/css">
+<!--
+
+body {
+    background: #fff;
+    font-family: Helvetica, Arial, sans-serif;    
+    color: #000;
+    margin: 0;
+}
+
+p {
+    text-align: justify;
+    margin-top: 0;
+}
+
+#page {
+    padding: 50px 75px 0px 75px;
+    max-width: 780px;
+}
+
+#header {
+    margin-bottom: 2em;
+}
+
+#teaser {
+    clear: both;
+    padding: 1.5em 0;
+}
+#where {
+    clear: both;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 500%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1#title {
+    font-size: 300%;
+}
+
+td.file {
+    font-weight: bold;
+    padding: 0 1em;
+}
+
+div.author {
+    float: left;
+    margin: 0.3em 0.75em 0.3em 0em;
+}
+
+div.author a:visited {
+    font-weight: bold;
+}
+
+
+h1 span.subtitle {
+    font-size: 75%;
+    color: #aaa;
+}
+
+h1.post {
+    margin-bottom: 20px;
+    font-size: 400%;
+}
+
+
+h3 {
+    clear: both;
+    font-size: 150%;
+    margin-top: 0.75em;
+    margin-bottom: 5px;
+    line-height: 150%;
+}
+
+h3 a {
+    color: #69341d;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #3333CC;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #3333CC;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FF0000;
+}
+
+.post-footer {
+    font-weight: bold;
+    color: #CCC;
+}
+
+#footer {
+    margin-top: 50px;
+    background: #e0e0d7;
+    border-top: solid 1px #000;
+    padding: 5px 75px;
+}
+#footer table {
+    width: 95%;
+    color: #000;
+    margin: 0;
+    font-size: 75%;
+}
+#footer th {
+    text-align: left;
+}
+
+#about {
+    width: 20em;
+}
+
+.bibtex {
+font-size: 12px;
+}
+
+
+-->
+</style>
+        <title>AppGen: Interactive Material Modeling from a Single Image</title>
+        </head>
+    
+    <body>
+        <div id="page">
+            <div id="header">
+
+                <h1 id="title">
+                    AppGen: Interactive Material Modeling from a Single Image
+                </h1>
+				
+                <div class="author">
+                    <a href="http://www.dongallen.com" target="_blank">Yue Dong</a>
+                  </div>
+
+                <div class="author">
+                    <a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">Xin Tong</a>
+                </div>
+
+                 <div class="author">
+                    <a href="http://www.cs.dartmouth.edu/~fabio/" target="_blank">Fabio Pellacini</a>
+                  </div>
+
+                <div class="author">
+                    <a href="http://research.microsoft.com/users/bainguo/" target="_blank">Baining Guo</a>
+                </div>
+ 
+                                
+                <div id="teaser" align="center">
+                  <video src="appgen_video.mp4" controls="controls">
+                  <img src="bootstrap.jpg" />
+                  </video>
+                </div>
+
+                <div id="where">ACM SIGGRAPH Asia 2011</div>
+
+            </div>
+            
+            <div id="content">
+                <div id="abstract">
+                    <h3>Abstract</h3>
+                    <p>We present AppGen, an interactive system for modeling materials from a single image. Given a texture image of a nearly planar surface lit with directional lighting, our system models the detailed spatially-varying reflectance properties (diffuse, specular and roughness) and surface normal variations with minimal user interaction. We ask users to indicate global shading and reflectance information by roughly marking the image with a few user strokes, while our system assigns reflectance properties and normals to each pixel. We first interactively decompose the input image into the product of a diffuse albedo map and a shading map. A two-scale normal reconstruction algorithm is then introduced to recover the normal variations from the shading map and preserve the geometric features at different scales. We finally assign the specular parameters to each pixel guided by user strokes and the diffuse albedo. Our system generates convincing results within minutes of interaction and works well for a variety of material types that exhibit different reflectance and normal variations, including natural surfaces and man-made ones.
+</p>
+                </div>
+                <div id="files">
+
+                    <h3>Files</h3>
+                    <table>
+                        <tr>
+                            <td class="file">Paper</td>
+                            <td><a href="appgen_paper.pdf" target="_blank">
+				PDF</a> (15 MB)</td>
+                        </tr>
+
+                        <tr>
+                            <td class="file">Video</td>
+                            <td><a href="appgen_video.mp4" target="_blank">
+				H264 Mp4</a> (45 MB)</td>
+                        </tr>
+
+                    </table>
+                </div>
+ <div id="acknowledgments">
+                    <h3>Acknowledgments</h3>
+                    <p>The authors would like to thank Stephen Lin for paper proofreading and Matt Callcut for video dubbing. The authors also thank GrungeTexture, Leo Reynolds, ka2rina from Flickr and Mayang.com for providing texture inputs. The authors are grateful to the anonymous reviewers for their helpful suggestions and comments. Fabio Pellacini was supported by the NSF (CNS-070820,CCF-0746117), Intel and the Sloan Foundation.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

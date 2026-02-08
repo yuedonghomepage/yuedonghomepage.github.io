@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<title>Object-based Illumination Estimation with
+Rendering-aware Neural Networks</title>
+	<link rel="stylesheet" type="text/css" href="../../main.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+	<div class="PublishInfo">
+			Published in
+			<span class="BookTitle">ECCV 2020</span>
+	</div>
+	<div class="TitleBar">
+	<h1>Object-based Illumination Estimation with </br>
+Rendering-aware Neural Networks</h1>
+	</div>
+	<div class="AuthorBar">
+	<ul class="AuthorList">
+			<li>
+				<span class="Author"><a href="" target="_blank">
+				Xin Wei</a><sup>1,2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="" target="_blank">
+				Guojun Chen</a><sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://yuedong.shading.me/" target="_blank">
+				Yue Dong</a><sup>1</sup>
+			</li>
+			<li>
+				<span class="Author"><a href="" target="_blank">
+				Stephen Lin</a><sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">
+				Xin Tong</a><sup>1</sup></span>
+			</li>
+		</ul>
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Affiliation"><sup>1</sup>Microsof Research Asia</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>2</sup>Zhejiang Univiersity</span>
+			</li>
+		</ul>   
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="teaser.jpg" alt="rendering resutls" class="PaperFigure" />
+	</div>
+    <p class="FigureDescription">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Overview of our system. The input RGB image crop is first decomposed into
+albedo, diffuse shading and specular shading maps. This </br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decomposition is assisted by
+shape information from a normal map, calculated from rough depth data. The diffuse
+shading is translated into </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the angular lighting domain with the help of auxiliary irradi-
+ance maps computed from the rough depth, and the specular shading is geometrically </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mapped to their mirror direction. The translated features are then processed in the
+angular fusion network to generate the final environment</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;light estimate.</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+We present a scheme for fast environment light estimation
+from the RGBD appearance of individual objects and their local image
+areas. Conventional inverse rendering is too computationally demanding
+for real-time applications, and the performance of purely learning-based
+techniques may be limited by the meager input data available from in-
+dividual objects. To address these issues, we propose an approach that
+takes advantage of physical principles from inverse rendering to con-
+strain the solution, while also utilizing neural networks to expedite the
+more computationally expensive portions of its processing, to increase
+robustness to noisy input data as well as to improve temporal and spa-
+tial stability. This results in a rendering-aware system that estimates the
+local illumination distribution at an object with high accuracy and in
+real time. With the estimated lighting, virtual objects can be rendered
+in AR scenarios with shading that is consistent to the real scene, leading
+to improved realism.
+
+ </p>
+   </div>
+
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">Lighting estimation, Inverse rendering</p>
+
+    </td>
+    <td>
+	
+    <h2 class="PaperSectionTitle">Paper and video</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="lightest.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 12.7 MB</span>             
+           </li>
+			</a>
+        </ul>
+    </div>
+
+	</td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>

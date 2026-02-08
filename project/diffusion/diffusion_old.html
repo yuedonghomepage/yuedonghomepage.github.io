@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+    <head>
+
+<style type="text/css">
+<!--
+
+body {
+    background: #fff;
+    font-family: Helvetica, Arial, sans-serif;    
+    color: #000;
+    margin: 0;
+}
+
+p {
+    text-align: justify;
+    margin-top: 0;
+}
+
+#page {
+    padding: 50px 75px 0px 75px;
+    max-width: 980px;
+}
+
+#header {
+    margin-bottom: 2em;
+}
+
+#teaser {
+    clear: both;
+    padding: 1.5em 0;
+}
+#where {
+    clear: both;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 500%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1#title {
+    font-size: 300%;
+}
+
+td.file {
+    font-weight: bold;
+    padding: 0 1em;
+}
+
+div.author {
+    float: left;
+    margin: 0.3em 0.75em 0.3em 0em;
+}
+
+div.author a:visited {
+    font-weight: bold;
+}
+
+
+h1 span.subtitle {
+    font-size: 75%;
+    color: #aaa;
+}
+
+h1.post {
+    margin-bottom: 20px;
+    font-size: 400%;
+}
+
+
+h3 {
+    clear: both;
+    font-size: 150%;
+    margin-top: 0.75em;
+    margin-bottom: 5px;
+    line-height: 150%;
+}
+
+h3 a {
+    color: #69341d;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #3333CC;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #3333CC;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FF0000;
+}
+
+.post-footer {
+    font-weight: bold;
+    color: #CCC;
+}
+
+#footer {
+    margin-top: 50px;
+    background: #e0e0d7;
+    border-top: solid 1px #000;
+    padding: 5px 75px;
+}
+#footer table {
+    width: 95%;
+    color: #000;
+    margin: 0;
+    font-size: 75%;
+}
+#footer th {
+    text-align: left;
+}
+
+#about {
+    width: 20em;
+}
+
+.bibtex {
+font-size: 12px;
+}
+
+
+-->
+</style>
+        <title>Modeling and Rendering Heterogeneous Translucent Materials using Diffusion Equation</title>
+        </head>
+    
+    <body>
+        <div id="page">
+            <div id="header">
+
+                <h1 id="title">
+                    Modeling and Rendering Heterogeneous Translucent Materials using Diffusion Equation
+                </h1>
+                
+                <table>
+                <tr>
+                <div class="author">
+                    <a href="http://www.jiapingwang.com/" target="_blank">Jiaping Wang</a>
+                </div>
+                <div class="author">
+	            <a href="http://www.shuangz.com" target="_blank">Shuang Zhao</a>
+	            </a>
+                </div>
+                <div class="author">
+                    <a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">Xin Tong</a>
+                </div>
+                <div class="author">
+	            <a href="http://research.microsoft.com/%7Estevelin/" target="_blank">Stephen Lin</a>
+                </div>
+                 <div class="author">
+	            <a href="http://research.microsoft.com/%7Ezhoulin/" target="_blank">Zhouchen Lin</a>
+                </div>
+                <div class="author">
+	            <a href="http://research.microsoft.com/%7Estevelin/" target="_blank">Stephen Lin</a>
+                </div>
+                <div class="author">
+	            <a href="http://www.dongallen.com" target="_blank">Yue Dong</a>
+                </div>
+                <div class="author">
+	            <a href="http://research.microsoft.com/users/bainguo/" target="_blank">Baining Guo</a>
+                </div>
+                <div class="author">
+	            <a href="http://research.microsoft.com/%7Ehshum/" target="_blank">Heung-Yeung Shum</a>
+                </div>
+                                
+                <div id="teaser" align="center">
+                    <img src="diffusion.jpg" />
+                </div>
+                </tr>
+                </table>
+
+                <div id="where">ACM Transactions on Graphics, Volume 27, Issue 1</div>
+
+            </div>
+            
+            <div id="content">
+                <div id="abstract">
+                    <h3>Abstract</h3>
+                    <p>In this paper, we propose techniques for modeling and rendering of heterogeneous translucent materials that enable
+		acquisition	from measured samples, interactive editing of material attributes, and real-time rendering. The materials
+		are assumed to be optically dense such that multiple scattering can be approximated by a diffusion process described
+		by the diffusion equation. For modeling heterogeneous materials, we present an algorithm for acquiring material
+		properties from appearance measurements by solving an inverse diffusion problem. Our modeling algorithm incorporates
+		a regularizer to handle the ill-conditioned inverse problem, an adjoint method to dramatically reduce the computational
+		cost, and a hierarchical GPU implementation for further speedup. To display an object with known material properties,
+		we present an algorithm that performs rendering by solving the diffusion equation with the boundary	condition defined
+		by the given illumination environment. This algorithm is centered around object representation by a
+		<span class="keyword">polygrid</span>, a grid
+		with regular connectivity and an irregular shape, which facilitates the solution of the diffusion equation in arbitrary
+		volumes. Because of the regular connectivity, our rendering algorithm can be implemented on the GPU for real-time performance.
+		We demonstrate our techniques by capturing materials from physical samples and performing real-time rendering and editing
+		with these materials.
+</p>
+                </div>
+                <div id="files">
+
+                    <h3>Files</h3>
+                    <table>
+                        <tr>
+                            <td class="file">Paper</td>
+                            <td><a href="http://research.microsoft.com/users/xtong/editable_tog.pdf" target="_blank">
+				PDF</a> (20 MB)</td>
+                        </tr>
+
+                        <tr>
+                            <td class="file">Video</td>
+                            <td><a href="http://research.microsoft.com/users/xtong/diffusion_tog_divx.avi" target="_blank">
+				DivX Avi</a> (46 MB)</td>
+                        </tr>
+                    </table>
+                </div>
+
+		<div id="bibtex">
+			<h3>BibTex reference</h3>
+
+<pre class = "bibtex">
+@article{Wang08,
+   author    = {Jiaping Wang and Shuang Zhao and Xin Tong and Stephen Lin and Zhouchen Lin and 
+			Yue Dong and Baining Guo and Heung-Yeung Shum},
+   title     = {Modeling and rendering of heterogeneous translucent materials using the diffusion 
+			equation},
+   journal   = {ACM Trans. Graph.},
+   volume    = {27},
+   number    = {1},
+   year      = {2008},
+   pages     = {1--18},
+   publisher = {ACM},
+   address   = {New York, NY, USA}
+}
+
+</pre>
+		</div>
+
+
+            </div>
+        </div>
+    </body>
+</html>

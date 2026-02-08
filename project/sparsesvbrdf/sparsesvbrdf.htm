@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<title>Sparse-as-Possible SVBRDF Acquisitions</title>
+	<link rel="stylesheet" type="text/css" href="../../main.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+	<div class="PublishInfo">
+			Published in
+			<span class="BookTitle">ACM Transactions on Graphics, Volume 35, Issue 6 (SIGGRAPH Asia 2016)</span>
+	</div>
+	<div class="TitleBar">
+	<h1>Sparse-as-Possible SVBRDF Acquisitions</h1>
+	</div>
+	<div class="AuthorBar">
+	<ul class="AuthorList">
+			<li>
+				<span class="Author"><a>
+				Zhiming Zhou</a><sup>1,2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a>
+				Guojun Chen</a><sup>2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a>
+				Yue Dong</a><sup>2</sup>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/en-us/um/people/johnsny/" target="_blank">
+				John Snyder</a><sup>2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://www.davidwipf.com/" target="_blank">
+				David Wipf</a><sup>2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a>
+				Yong Yu</a><sup>1</sup>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">
+				Xin Tong</a><sup>2</sup></span>
+			</li>
+		</ul>
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Affiliation"><sup>1</sup>Shanghai Jiao Tong University</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>2</sup>Microsoft Research</span>
+			</li>
+		</ul>   
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="teaser.jpg" alt="rendering resutls" class="PaperFigure" />
+	</div>
+    <p class="FigureDescription">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SVBRDFs reconstructed by our method and relit.</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+ We present a novel method for capturing real-world, spatially-varying surface reflectance from a small number of object views (k).  Our key observation is that a specific target's reflectance can be represented by a small number of custom basis materials (N) convexly blended by an even smaller number of non-zero weights at each point (n). Based on this sparse basis/sparser blend model, we develop an SVBRDF reconstruction algorithm that jointly solves for n, N, the basis BRDFs, and their spatial blend weights with an alternating iterative optimization, each step of which solves a linearly-constrained quadratic programming problem.  We develop a numerical tool that lets us estimate the number of views required and analyze the effect of lighting and geometry on reconstruction quality.
+We validate our method with images rendered from synthetic BRDFs, and demonstrate convincing results on real objects of pre-scanned shape and lit by uncontrolled natural illumination, from very few or even a single input image.
+ </p>
+   </div>
+
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+		
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">Appearance Modeling, Sparse Reconstruction</p>
+
+    <h2 class="PaperSectionTitle">Downloads</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="sparsesvbrdf.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 54.2 MB</span>             
+            </li>
+			</a>
+			<a href="sparsesvbrdf.mov">
+            <li>
+                <span class="FileTitle">Video</span>
+                <span class="FileDesc">h.264 | 101 MB</span>
+            </li>
+			</a>
+			<a href="sparsesvbrdf.pptx">
+            <li>
+                <span class="FileTitle">Slides</span>
+                <span class="FileDesc">.pptx | 140 MB</span>
+            </li>
+			</a>
+        </ul>
+    </div>
+	</td>
+	<td>
+	<h2 class="PaperSectionTitle">Acknowledgements</h2>
+    <p class="Acknowledgements">The authors wish to thank the reviewers for their constructive feedback,
+also thank Wojciech Matusik for providing the MERL BRDF
+database. The 3D geometry scan service is provided by Beijing
+Asahi 3D Technology Co.,Ltd.
+
+</p>
+
+	<h2 class="PaperSectionTitle">Data</h2>
+    <p class="Acknowledgements">Part of captured data are processed and converted to renderer friendly format. The data can be accessed <a href="http://www.shading.me"> here </a>.
+</p>
+
+	</td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>

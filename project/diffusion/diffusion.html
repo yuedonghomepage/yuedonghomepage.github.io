@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<title>Modeling and Rendering Heterogeneous Translucent Materials using Diffusion Equation</title>
+	<link rel="stylesheet" type="text/css" href="../../main.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+	<div class="PublishInfo">
+			Published in
+			<span class="BookTitle">ACM Transactions on Graphics, Volume 27, Issue 1</span>
+	</div>
+	<div class="TitleBar">
+	<h1>Modeling and Rendering Heterogeneous Translucent Materials using Diffusion Equation</h1>
+	</div>
+	<div class="AuthorBar">
+
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Author"><a href="http://www.jiapingwang.com/" target="_blank">
+				Jiaping Wang</a><sup>1</sup></span>
+			</li>	
+			<li>
+				<span class="Author"><a href="http://www.shuangz.com" target="_blank">
+				Shuang Zhao</a><sup>1,2</sup></span>
+			</li>	
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">
+				Xin Tong</a><sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/%7Estevelin/" target="_blank">
+				Stephen Lin</a><sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/%7Ezhoulin/" target="_blank">
+				Zhouchen Lin</a><sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author">
+				Yue Dong</a><sup>1,</sup><sup>3</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/bainguo/" target="_blank">
+				Baining Guo</a><sup>1,</sup><sup>3</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/%7Ehshum/" target="_blank">
+				Heung-Yeung Shum</a><sup>1,</sup><sup>3</sup></span>
+			</li>
+		</ul>
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Affiliation"><sup>1</sup>Microsoft Research Asia</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>2</sup>Shanghai Jiaotong University</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>3</sup>Tsinghua University</span>
+			</li>
+
+		</ul>   
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="teaser.png" alt="fabrication resutls" class="PaperFigure" />
+	</div>
+    <p class="FigureDescription">Synthesis of a bunny with marble material. (a) Physical sample. (b) Bunny rendered with the acquired material model. (c) After interactive
+editing to add patterns. (d) After placing a pattern at a different depth.</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+In this paper, we propose techniques for modeling and rendering of heterogeneous translucent materials that enable
+		acquisition	from measured samples, interactive editing of material attributes, and real-time rendering. The materials
+		are assumed to be optically dense such that multiple scattering can be approximated by a diffusion process described
+		by the diffusion equation. For modeling heterogeneous materials, we present an algorithm for acquiring material
+		properties from appearance measurements by solving an inverse diffusion problem. Our modeling algorithm incorporates
+		a regularizer to handle the ill-conditioned inverse problem, an adjoint method to dramatically reduce the computational
+		cost, and a hierarchical GPU implementation for further speedup. To display an object with known material properties,
+		we present an algorithm that performs rendering by solving the diffusion equation with the boundary	condition defined
+		by the given illumination environment. This algorithm is centered around object representation by a
+		polygrid, a grid with regular connectivity and an irregular shape, which facilitates the solution of the diffusion equation in arbitrary
+		volumes. Because of the regular connectivity, our rendering algorithm can be implemented on the GPU for real-time performance.
+		We demonstrate our techniques by capturing materials from physical samples and performing real-time rendering and editing
+		with these materials.
+</p>
+   </div>
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+		
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">Appearance modeling and rendering, diffusion approximation, subsurface scattering</p>
+
+    <h2 class="PaperSectionTitle">Downloads</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="http://research.microsoft.com/users/xtong/editable_tog.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 20.0 MB</span>             
+            </li>
+			</a>
+			<a href="http://research.microsoft.com/users/xtong/diffusion_tog_divx.avi">
+            <li>
+                <span class="FileTitle">Video</span>
+                <span class="FileDesc">DivX | 46.0 MB</span>
+            </li>
+			</a>
+			</a>
+			<a href="http://research.microsoft.com/en-us/um/people/yuedong/project/diffusion/data.rar">
+            <li>
+                <span class="FileTitle">Data</span>
+                <span class="FileDesc">Material Volume | 34.4 MB</span>
+            </li>
+			</a>
+        </ul>
+    </div>
+	
+	<h2 class="PaperSectionTitle">BibTex</h2>
+    <pre class="bibtex">
+@article{Wang:2008:MRH,
+ author = {Wang, Jiaping and Zhao, Shuang and 
+ Tong, Xin and Lin, Stephen and Lin, Zhouchen and 
+ Dong, Yue and Guo, Baining and Shum, Heung-Yeung},
+ title = {Modeling and rendering of heterogeneous 
+ translucent materials using the diffusion equation},
+ journal = {ACM Trans. Graph.},
+ issue_date = {March 2008},
+ volume = {27},
+ number = {1},
+ month = mar,
+ year = {2008},
+ issn = {0730-0301},
+ pages = {9:1--9:18},
+ articleno = {9},
+ numpages = {18},
+ url = {http://doi.acm.org/10.1145/1330511.1330520},
+ doi = {10.1145/1330511.1330520},
+ acmid = {1330520},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Appearance modeling and rendering, 
+ diffusion approximation, subsurface scattering},
+} 
+
+	</pre>
+
+	</td>
+	<td>
+	<h2 class="PaperSectionTitle">Acknowledgements</h2>
+    <p class="Acknowledgements">The snail in Figure 20 was modeled by Feiyang Tong. The authors thank Ming Jiang, Tie Zhou, Ruo Li and Guanquan
+Zhang for discussions on inverse diffusion, and the anonymousreviewers for their helpful suggestions and comments.
+This work was done when Shuang Zhao, and Yue Dong were visiting students in Microsoft Research Asia.
+</p>
+		
+	</td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>

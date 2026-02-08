@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+    <head>
+
+<style type="text/css">
+<!--
+
+body {
+    background: #fff;
+    font-family: Helvetica, Arial, sans-serif;    
+    color: #000;
+    margin: 0;
+}
+
+p {
+    text-align: justify;
+    margin-top: 0;
+}
+
+#page {
+    padding: 50px 75px 0px 75px;
+    max-width: 680px;
+}
+
+#header {
+    margin-bottom: 2em;
+}
+
+#teaser {
+    clear: both;
+    padding: 1.5em 0;
+}
+#where {
+    clear: both;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 500%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1#title {
+    font-size: 300%;
+}
+
+td.file {
+    font-weight: bold;
+    padding: 0 1em;
+}
+
+div.author {
+    float: left;
+    margin: 0.3em 0.75em 0.3em 0em;
+}
+
+div.author a:visited {
+    font-weight: bold;
+}
+
+
+h1 span.subtitle {
+    font-size: 75%;
+    color: #aaa;
+}
+
+h1.post {
+    margin-bottom: 20px;
+    font-size: 400%;
+}
+
+
+h3 {
+    clear: both;
+    font-size: 150%;
+    margin-top: 0.75em;
+    margin-bottom: 5px;
+    line-height: 150%;
+}
+
+h3 a {
+    color: #69341d;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #3333CC;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #3333CC;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FF0000;
+}
+
+.post-footer {
+    font-weight: bold;
+    color: #CCC;
+}
+
+#footer {
+    margin-top: 50px;
+    background: #e0e0d7;
+    border-top: solid 1px #000;
+    padding: 5px 75px;
+}
+#footer table {
+    width: 95%;
+    color: #000;
+    margin: 0;
+    font-size: 75%;
+}
+#footer th {
+    text-align: left;
+}
+
+#about {
+    width: 20em;
+}
+
+.bibtex {
+font-size: 12px;
+}
+
+
+-->
+</style>
+        <title>Fabricating Spatially-Varying Subsurface Scattering</title>
+        </head>
+    
+    <body>
+        <div id="page">
+            <div id="header">
+
+                <h1 id="title">
+                    Fabricating Spatially-Varying Subsurface Scattering 
+                </h1>
+                
+                <div class="author">
+                    <a href="http://www.dongallen.com" target="_blank">Yue Dong</a>
+                  </div>
+
+                <div class="author">
+                    <a href="http://www.jiapingwang.com/" target="_blank">Jiaping Wang</a>
+                </div>
+
+                                <div class="author">
+                    <a href="http://www.cs.dartmouth.edu/~fabio/" target="_blank">Fabio Pellacini</a>
+                  </div>
+
+                <div class="author">
+                    <a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">Xin Tong</a>
+                </div>
+
+                <div class="author">
+                    <a href="http://research.microsoft.com/users/bainguo/" target="_blank">Baining Guo</a>
+                </div>
+ 
+                                
+                <div id="teaser" align="center">
+<video src="fabscat.mp4" controls="controls">
+                  <img src="fabscat.jpg" />
+</video>
+
+                </div>
+
+                <div id="where">ACM SIGGRAPH 2010</div>
+
+            </div>
+            
+            <div id="content">
+                <div id="abstract">
+                    <h3>Abstract</h3>
+                    <p>Many real world surfaces exhibit translucent appearance due to subsurface scattering. Although various methods exists to measure, edit and render subsurface scattering effects, no solution exists for manufacturing physical objects with desired translucent appearance. In this paper, we present a complete solution for fabricating a material volume with a desired surface BSSRDF. We stack layers from a fixed set of manufacturing materials whose thickness is varied spatially to reproduce the heterogeneity of the input BSSRDF. Given an input BSSRDF and the optical properties of the manufacturing
+materials, our system efficiently determines the optimal order and thickness of the layers. We demonstrate our approach
+by printing a variety of homogenous and heterogenous BSSRDFs using two hardware setups: a milling machine and a 3D printer.
+</p>
+                </div>
+                <div id="files">
+
+                    <h3>Files</h3>
+                    <table>
+					<a href="fabscat.pdf" target="_blank">
+                        <tr>						
+                            <td class="file">Paper</td>
+                            <td>
+				PDF (5 MB)</td>
+                        </tr>
+					</a>
+						
+                        <tr>
+                            <td class="file">Video</td>
+                            <td><a href="fabscat.mp4" target="_blank">
+				H264 Mp4</a> (36 MB)</td>
+                        </tr>
+
+                    </table>
+                </div>
+ <div id="acknowledgments">
+                    <h3>Acknowledgments</h3>
+                    <p>We would like to thank Steve Lin for paper proofreading
+and Matt Callcut for video dubbing.  The authors also thank Matt
+Bell and William B. Kerr for operating the 3D printer. The authors
+are grateful to the anonymous reviewers for their helpful sugges-
+tions and comments.  Fabio Pellacini was supported by the NSF <br/>
+(CNS-070820, CCF-0746117), Intel and the Sloan Foundation.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

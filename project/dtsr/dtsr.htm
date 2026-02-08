@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<title>Classifier Guided Temporal Supersampling for Real-time Rendering</title>
+	<link rel="stylesheet" type="text/css" href="../../main.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+	<div class="PublishInfo">
+			Published in
+			<span class="BookTitle">Computer Graphics Forum (Pacific Graphics 2022)</span>
+	</div>
+	<div class="TitleBar">
+	<h1>Classifier Guided Temporal Supersampling for Real-time Rendering</h1>
+	</div>
+	<div class="AuthorBar">
+	<ul class="AuthorList">
+			<li>
+				<span class="Author"><a href="" target="_blank">
+				Yu-Xiao Guo</a><sup></sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="" target="_blank">
+				Guojun Chen</a><sup></sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://yuedong.shading.me/" target="_blank">
+				Yue Dong</a><sup></sup>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">
+				Xin Tong</a><sup></sup></span>
+			</li>
+		</ul>
+
+		<ul class="AuthorList">
+				<span class="Affiliation"><sup></sup>Microsoft Research Asia</span>
+			</li>
+		</ul>   
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="teaser.jpg" alt="rendering resutls" class="PaperFigure" />
+	</div>
+    <p class="FigureDescription">Supersampling result of our method. With a low resolution aliased sample input 1920x1080, our method can generate aliasing free high resolution output 3840x2160 while maintaining temporally stable between frames. Classical methods like TAAU [YLS20] fail to reconstruct fine details in their results (see zoom-in views in the right column, odd-rows), learning based solution [XNC∗20] is slow and exhibits temporal jittering (see temporal profiles in the right column, even-rows). Our method generates results with similar quality to DLSS without requiring dedicated hardware and software.</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+We present a learning based temporal supersampling algorithm for real-time rendering. Different from existing learning-based approaches that adopt an end-to-end training of a 'black-box' neural network, we design a 'white-box' solution that first classifies the pixels into different categories and then generates the supersampling result based on classification. Our key observation is that the core problem in temporal supersampling for rendering is to distinguish the pixels that consist of occlusion, aliasing, or shading changes. Samples from these pixels exhibit similar temporal radiance change but require different composition strategies to produce the correct supersampling result. Based on this observation, our method first classifies the pixels into several classes. Based on the classification results, our method then blends the current frame with the warped last frame via a learned weight map to get the supersampling results. We design compact neural networks for each step and develop dedicated loss functions for pixels belonging to different classes. Compared to existing learning based methods, our classifier-based supersampling scheme takes less computational and memory cost for real-time supersampling and generates visually compelling temporal supersampling results with fewer flickering artifacts. 
+We evaluate the performance and generality of our method on several rendered game sequences and our method can upsample the rendered frames from 1080P to 2160P in just 13.39ms on a single Nvidia 3090GPU.
+ </p>
+   </div>
+
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">Real-time rendering, Supersampling</p>
+
+    <h2 class="PaperSectionTitle">Paper and video</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="dtsr.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 120 MB</span>             
+           </li>
+			</a>
+			<a href="dtsr.pdf">
+            <li>
+                <span class="FileTitle">Video</span>
+                <span class="FileDesc">.mov | 658 MB</span>           
+           </li>
+			</a>
+        </ul>
+    </div>
+
+    </td>
+    <td>
+	<h2 class="PaperSectionTitle">Acknowledgements</h2>
+    <p class="Acknowledgements">We would like to thank the reviewers for their constructive feedback; Chong Zeng, Jilong Xue, Yuqing Xia, Wei Cui and the
+NNFusion [MXY∗20] team’s support for optimizing the HLSL
+shader code; Youkang Kong’s help implementing the NSR method
+[XNC∗20]. We would also like to thank people from the Microsoft
+Xbox and xCloud team for valuable discussions, including Daniel
+Kennett, Hoi Vo, Matt Bronder and Andrew Goossen.
+</p>
+
+
+
+	</td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>

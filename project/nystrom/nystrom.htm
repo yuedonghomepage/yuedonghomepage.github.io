@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<title>Kernel Nystrom for Light Transport</title>
+	<link rel="stylesheet" type="text/css" href="../../main.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+	<div class="PublishInfo">
+			Published in
+			<span class="BookTitle">ACM Transactions on Graphics, Volume 29, Issue 4 (SIGGRAPH 2010)</span>
+	</div>
+	<div class="TitleBar">
+	<h1>Kernel Nystrom for Light Transport</h1>
+	</div>
+	<div class="AuthorBar">
+
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Author"><a href="http://www.jiapingwang.com/" target="_blank">
+				Jiaping Wang</a><sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author">
+				Yue Dong</a><sup>1,</sup><sup>2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">
+				Xin Tong</a><sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/%7Ezhoulin/" target="_blank">
+				Zhouchen Lin</a><sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/bainguo/" target="_blank">
+				Baining Guo</a><sup>1,</sup><sup>2</sup></span>
+			</li>
+		</ul>
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Affiliation"><sup>1</sup>Microsoft Research Asia</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>2</sup>Tsinghua University</span>
+			</li>
+		</ul>   
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="teaser.png" alt="fabrication resutls" class="PaperFigure" />
+	</div>
+    <p class="FigureDescription">Relighting results using the light transport matrix reconstructed by our method. Complex light transport effects, including caustics
+(a), complex occlusions (b), and a mixture of caustics, complex occlusions, inter-reflections, and subsurface scattering (c) are all faithfully
+reproduced.</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+We propose a kernel Nystrom method for reconstructing the light transport matrix from a relatively
+		 small number of acquired images. Our work is based on the generalized Nystrom method for low rank
+		 matrices. We introduce the light transport kernel and incorporate it into the Nystrom method to 
+		exploit the nonlinear coherence of the light transport matrix. We also develop an adaptive scheme for
+		 efficiently capturing the sparsely sampled images from the scene. Our experiments indicate that the
+		 kernel Nystrom method can achieve good reconstruction of the light transport matrix with a few hundred
+		 images and produce high quality relighting results. The kernel Nystrom method is effective for modeling
+		 scenes with complex lighting effects and occlusions which have been challenging for existing techniques.
+</p>
+   </div>
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+		
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">Low-rank approximation, light transport matrix</p>
+
+    <h2 class="PaperSectionTitle">Downloads</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="http://research.microsoft.com/en-us/um/people/xtong/Nystrom.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 2.0 MB</span>             
+            </li>
+			</a>
+			<a href="http://research.microsoft.com/en-us/um/people/xtong/nystrom.avi">
+            <li>
+                <span class="FileTitle">Video</span>
+                <span class="FileDesc">DivX | 40.0 MB</span>
+            </li>
+			</a>
+        </ul>
+    </div>
+	
+	<h2 class="PaperSectionTitle">BibTex</h2>
+    <pre class="bibtex">
+@article{Wang:2009:KNM,
+ author = {Wang, Jiaping and Dong, Yue 
+ and Tong, Xin and Lin, Zhouchen and Guo, Baining},
+ title = {Kernel Nystr\öm method for light transport},
+ journal = {ACM Trans. Graph.},
+ issue_date = {August 2009},
+ volume = {28},
+ number = {3},
+ month = jul,
+ year = {2009},
+ issn = {0730-0301},
+ pages = {29:1--29:10},
+ articleno = {29},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1531326.1531335},
+ doi = {10.1145/1531326.1531335},
+ acmid = {1531335},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+	</pre>
+
+	</td>
+	<td>
+	<h2 class="PaperSectionTitle">Acknowledgements</h2>
+    <p class="Acknowledgements">The authors would like to thank Yi Ma and John Wright for helpful
+discussions, and Matthew Callcut for proofreading the paper and
+dubbing the video. We also thank the anonymous reviewers for
+their helpful suggestions and comments.
+</p>
+	
+	</td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>

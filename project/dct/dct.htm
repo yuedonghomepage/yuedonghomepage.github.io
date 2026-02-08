@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<title>Diffusion Curve Textures for Resolution Independent Texture Mapping</title>
+	<link rel="stylesheet" type="text/css" href="../../main.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+	<div class="PublishInfo">
+			Published in
+			<span class="BookTitle">ACM Transactions on Graphics, Volume 31, Issue 4 (SIGGRAPH 2012)</span>
+	</div>
+	<div class="TitleBar">
+	<h1>Diffusion Curve Textures for Resolution Independent Texture Mapping</h1>
+	</div>
+	<div class="AuthorBar">
+
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Author"><a href="http://sunxin.name/" target="_blank">
+				Xin Sun</a><sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://www.guofuxie.com/" target="_blank">
+				Guofu Xie</a><sup>2,</sup><sup>3</sup></span>
+			</li>
+			<li>
+				<span class="Author">
+				Yue Dong</a><sup>1,</sup><sup>2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/%7Estevelin/" target="_blank">
+				Stephen Lin</a><sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://weiweixu.net/" target="_blank">
+				Weiwei Xu</a><sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://lcs.ios.ac.cn/~whn" target="_blank">
+				Wencheng Wang</a><sup>3</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">
+				Xin Tong</a><sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/bainguo/" target="_blank">
+				Baining Guo</a><sup>1</sup></span>
+			</li>
+		</ul>
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Affiliation"><sup>1</sup>Microsoft Research Asia</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>2</sup>State Key Laboratory of Computer Science, ISCAS</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>3</sup>GUCAS</span>
+			</li>
+		</ul>   
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="teaser.png" alt="rendering resutls" class="PaperFigure" />
+	</div>
+    <p class="FigureDescription">Our method provides a compact and explicit representation of diffusion curve images for texture mapping onto a surface. The
+sharp features and detailed color variations of textures are well preserved in the rendering results.</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+We introduce a vector representation called diffusion curve textures for mapping diffusion curve images (DCI) onto arbitrary
+surfaces.
+In contrast to the original implicit representation of
+DCIs [Orzan et al. 2008], where determining a single texture value
+requires iterative computation of the entire DCI via the Poisson
+equation, diffusion curve textures provide an explicit representation from which the texture value at any point can be solved directly, while preserving the compactness and resolution independence of diffusion curves. This is achieved through a formulation
+of the DCI diffusion process in terms of Green’s functions. This
+formulation furthermore allows the texture value of any rectangular
+region (e.g. pixel area) to be solved inclosed form, which facilitates
+anti-aliasing. We develop a GPU algorithm that renders anti-aliased
+diffusion curve textures in real time, and demonstrate the effectiveness of this method through high quality renderings with detailed
+control curves and color variations
+</p>
+   </div>
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+		
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">vector images; diffusion curves; texture mapping and rendering</p>
+
+    <h2 class="PaperSectionTitle">Downloads</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="vectex.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 10.1 MB</span>             
+            </li>
+			</a>
+			<a href="vertex_divx.avi">
+            <li>
+                <span class="FileTitle">Video</span>
+                <span class="FileDesc">DivX | 77.0 MB</span>
+            </li>
+			</a>
+        </ul>
+    </div>
+	
+	<h2 class="PaperSectionTitle">BibTex</h2>
+    <pre class="bibtex">
+@article{Sun:2012:DCT,
+ author = {Sun, Xin and Xie, Guofu and Dong, 
+ Yue and Lin, Stephen and Xu, Weiwei and Wang, 
+ Wencheng and Tong, Xin and Guo, Baining},
+ title = {Diffusion curve textures for resolution 
+ independent texture mapping},
+ journal = {ACM Trans. Graph.},
+ issue_date = {July 2012},
+ volume = {31},
+ number = {4},
+ month = jul,
+ year = {2012},
+ issn = {0730-0301},
+ pages = {74:1--74:9},
+ articleno = {74},
+ numpages = {9},
+ url = {http://doi.acm.org/10.1145/2185520.2185570},
+ doi = {10.1145/2185520.2185570},
+ acmid = {2185570},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {diffusion curves, texture mapping 
+ and rendering, vector images},
+} 
+	</pre>
+
+	</td>
+	<td>
+	<h2 class="PaperSectionTitle">Acknowledgements</h2>
+    <p class="Acknowledgements">We would like to thank the reviewers for their valuable comments.
+Guofu Xie and Wencheng Wang were partially supported by NSF
+of China (60833007).
+</p>
+		
+	</td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>

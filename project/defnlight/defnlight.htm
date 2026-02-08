@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<title>Deferred Neural Lighting: Free-viewpoint Relighting from Unstructured
+Photographs</title>
+	<link rel="stylesheet" type="text/css" href="../../main.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+	<div class="PublishInfo">
+			Published in
+			<span class="BookTitle">ACM Transactions on Graphics, Volume 39, Issue 6 (SIGGRAPH Asia 2020)</span>
+	</div>
+	<div class="TitleBar">
+	<h1>Deferred Neural Lighting: Free-viewpoint Relighting from Unstructured
+Photographs</h1>
+	</div>
+	<div class="AuthorBar">
+	<ul class="AuthorList">
+			<li>
+				<span class="Author"><a href="https://gao-duan.github.io/" target="_blank">
+				Duan Gao</a><sup>1,2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="" target="_blank">
+				Guojun Chen</a><sup>2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://yuedong.shading.me/" target="_blank">
+				Yue Dong</a><sup>2</sup>
+			</li>
+			<li>
+				<span class="Author"><a href="http://www.cs.wm.edu/~ppeers/" target="_blank">
+				Pieter Peers</a><sup>3</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="https://cg.cs.tsinghua.edu.cn/people/~kun/" target="_blank">
+				Kun Xu</a><sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">
+				Xin Tong</a><sup>2</sup></span>
+			</li>
+		</ul>
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Affiliation"><sup>1</sup>Tsinghua University</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>2</sup>Microsof Research Asia</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>3</sup> College of William & Mary</span>
+			</li>
+		</ul>   
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="teaser.jpg" alt="rendering resutls" class="PaperFigure" />
+	</div>
+    <p class="FigureDescription">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fig. 1. Examples of scenes captured with a handheld dual camera setup, and relit using deferred neural lighting. (a) A cat with non-polygonal </br>
+    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; shape (i.e., fur),
+(b) a translucent Pixiu statuette, (c) and a candy bowl scene with complex shadowing. All three scenes are relit with a directional </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;light. (d) A gnome statue on a
+glossy surface, (e) a decorative fish on a spatially varying surface, and (f) a cluttered scene with a stuffed Koala toy, </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a wooden toy cat and anisotropic satin. All
+three scenes are relit by the natural environment maps shown in the insets.</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+We present deferred neural lighting, a novel method for free-viewpoint re-
+lighting from unstructured photographs of a scene captured with handheld
+devices. Our method leverages a scene-dependent neural rendering network
+for relighting a rough geometric proxy with learnable neural textures. Key
+to making the rendering network lighting aware are radiance cues: global il-
+lumination renderings of a rough proxy geometry of the scene for a small set
+of basis materials and lit by the target lighting. As such, the light transport
+through the scene is never explicitely modeled,but resolved at rendering time
+by a neural rendering network. We demonstrate that the neural textures and
+neural renderer can be trained end-to-end from unstructured photographs
+captured with a double hand-held camera setup that concurrently captures
+the scene while being lit by only one of the cameras’ flash lights. In addi-
+tion, we propose a novel augmentation refinement strategy that exploits
+the linearity of light transport to extend the relighting capabilities of the
+neural rendering network to support other lighting types (e.g., environment lighting) beyond the lighting used during acquisition (i.e., flash lighting). We
+demonstrate our deferred neural lighting solution on a variety of real-world
+and synthetic scenes exhibiting a wide range of material properties, light
+transport effects, and geometrical complexity.
+
+ </p>
+   </div>
+
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">Appearance modeling, Inverse rendering</p>
+
+    <h2 class="PaperSectionTitle">Paper and video</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="DeferredNeuralLighting.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 16.4 MB</span>             
+           </li>
+			</a>
+        </ul>
+    </div>
+    <h2 class="PaperSectionTitle">Trained model and code</h2>
+
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="https://github.com/msraig/DeferredNeuralLighting">
+            <li>
+                <span class="FileTitle">GitHub Repo</span>
+                <span class="FileDesc">Code and model</span>             
+            </li>
+			</a>
+        </ul>
+    </div>
+
+    </td>
+    <td>
+	<h2 class="PaperSectionTitle">Acknowledgements</h2>
+    <p class="Acknowledgements">We would like to thank the reviewers for their constructive feedback,
+Nam et al. [2018] for kindly agreeing to help with the comparison
+with their method, and Xu et al. [2018] for sharing their trained
+network (Figure 10). Pieter Peers was partially supported by NSF
+grant IIS-1909028. Duan Gao and Kun Xu are supported by the
+National Natural Science Foundation of China (Project Numbers:
+61822204, 61932003, 61521002).
+</p>
+
+
+
+	</td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>

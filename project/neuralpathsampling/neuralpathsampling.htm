@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<title>Neural Path Sampling for Rendering Pure Specular Light Transport</title>
+	<link rel="stylesheet" type="text/css" href="../../main.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+	<div class="PublishInfo">
+			Published in
+			<span class="BookTitle">Computer Graphics Forum</span>
+	</div>
+	<div class="TitleBar">
+	<h1>Neural Path Sampling for Rendering Pure Specular Light Transport<</h1>
+	</div>
+	<div class="AuthorBar">
+	<ul class="AuthorList">
+			<li>
+				<span class="Author"><a href="" target="_blank">
+				Rui Yu</a><sup>1,2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://yuedong.shading.me/" target="_blank">
+				Yue Dong</a><sup>2</sup>
+			</li>
+			<li>
+				<span class="Author"><a href="" target="_blank">
+				Youkang Kong</a><sup>3,2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">
+				Xin Tong</a><sup>2</sup></span>
+			</li>
+		</ul>
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Affiliation"><sup>1</sup>University of Science and Technology of China</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>2</sup>Microsoft Research Asia</span>
+			</li>
+			<li>
+				<span class="Affiliation"><sup>3</sup>Tsinghua University</span>
+			</li>
+		</ul> 
+		
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="teaser.jpg" alt="rendering resutls" class="PaperFigure" />
+	</div>
+    <p class="FigureDescription">Rendering of THE BREAKFAST ROOM scene that presented challenging pure-specular light transport paths. We tested a biased
+		specular manifold sampling (SMS) [ZGJ20] estimator with uniform initial path sampling and our neural path sampling, all with a rendering
+		time of 2.2 hours. Ground-truth images are included as references. To better visualize the results, we properly scaled the exposures of
+		the cropped region. The bottom row shows the energy contributed by the specular paths only. Our neural path sampling method yielded
+		convincing results, while the original biased SMS estimator exhibited energy loss and produced noisy images.</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+		Multi-bounce, pure specular light paths produce complex lighting effects, such as caustics and sparkle highlights, which are
+		challenging to render due to their sparse and diverse nature. We introduce a learning-based method for the efficient rendering
+		of pure specular light transport. The key idea is training a neural network to model the distribution of all specular light paths
+		between pairs of endpoints for one specular object. To achieve this, for each object, our method models the distribution of
+		sparse and diverse specular light paths between two endpoints using smooth 2D maps of ray directions from one endpoint and
+		represents these maps with a 2D convolutional network. We design a training scheme to efficiently sample specular light paths
+		from the scene and train the network. Once trained, our method predicts specular light paths for a given pair of endpoints
+		using the network and employs root-finding-based algorithms for rendering the specular light transport. Experimental results
+		demonstrate that our method generates high-quality results, supports dynamic lighting and moving objects within the scene,
+		and significantly enhances the rendering speed of existing techniques.</p>
+   </div>
+
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">Ray tracing; Neural networks;</p>
+
+    <h2 class="PaperSectionTitle">Paper and video</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="neuralpathsampling.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 16.5 MB</span>             
+           </li>
+			</a>
+			<a href="neuralpathsampling.mp4">
+            <li>
+                <span class="FileTitle">Video</span>
+                <span class="FileDesc">.mp4 | 165 MB</span>           
+           </li>
+			</a>
+        </ul>
+    </div>
+
+    </td>
+    <td>
+
+	</td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>

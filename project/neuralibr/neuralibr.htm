@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<title>Image Based Relighting Using Neural Networks</title>
+	<link rel="stylesheet" type="text/css" href="../../main.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+	<div class="PublishInfo">
+			Published in
+			<span class="BookTitle">ACM Transactions on Graphics, Volume 34, Issue 4 (SIGGRAPH 2015)</span>
+	</div>
+	<div class="TitleBar">
+	<h1>Image Based Relighting Using Neural Networks</h1>
+	</div>
+	<div class="AuthorBar">
+	<ul class="AuthorList">
+			<li>
+				<span class="Author"><a href="http://renpr.org" target="_blank">
+				Peiran Ren</a><sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author">
+				Yue Dong</a><sup>1</sup>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/en-us/people/stevelin/" target="_blank">
+				Stephen Lin</a><sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">
+				Xin Tong</a><sup>1</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/en-us/press/bainguo.aspx" target="_blank">
+				Baining Guo</a><sup>1</sup></span>
+			</li>
+		</ul>
+
+		<ul class="AuthorList">
+			<li>
+				<span class="Affiliation"><sup>1</sup>Microsoft Research</span>
+			</li>
+		</ul>   
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="teaser.jpg" alt="rendering resutls" class="PaperFigure" />
+	</div>
+    <p class="FigureDescription">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Relighting of various scenes using light transport captured by our method from a small number of images.</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+ We present a neural network regression method for relighting realworld scenes from a small number of images. The relighting in
+this work is formulated as the product of the scene’s light transport matrix and new lighting vectors, with the light transport matrix reconstructed from the input images. Based on the observation that there should exist non-linear local coherence in the light transport matrix, our method approximates matrix segments using neural networks that model light transport as a non-linear function of light source position and pixel coordinates. Central to this approach is a proposed neural network design which incorporates various elements that facilitate modeling of light transport from a small image set. In contrast to most image based relighting techniques, this regression-based approach allows input images to be captured under arbitrary illumination conditions, including light sources moved freely by hand. We validate our method with light transport data of real scenes containing complex lighting effects, and demonstrate that fewer input images are required in comparison to related techniques.</p>
+   </div>
+
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+		
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">image based relighting, light transport, neural network, clustering</p>
+
+    <h2 class="PaperSectionTitle">Downloads</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="neuralibr.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 69.4 MB</span>             
+            </li>
+			</a>
+			<a href="neuralibr.mov">
+            <li>
+                <span class="FileTitle">Video</span>
+                <span class="FileDesc">h.264 | 173 MB</span>
+            </li>
+			</a>
+			<!---
+			<a href="afm.pptx">
+            <li>
+                <span class="FileTitle">Slides</span>
+                <span class="FileDesc">.pptx | 81.7 MB</span>
+            </li>
+			</a>
+			-->
+        </ul>
+    </div>
+	</td>
+	<td>
+	<h2 class="PaperSectionTitle">Acknowledgements</h2>
+    <p class="Acknowledgements">The authors thank Zheng ZHANG, Jiaxing ZHANG, Dong YU,
+Zhiheng HUANG for insightful discussions on deep neural networks, Yi MA, Gong CHENG, Jinyu LI on robust PCA, and Yang
+LIU on non-linear optimization. The authors also thank the anonymous reviewers for their helpful suggestions and comments. The
+Waldorf and the Bull scenes are from the public data shared by Matthew O’TOOLE and Kiriakos N. KUTULAKOS.
+</p>
+
+	</td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>

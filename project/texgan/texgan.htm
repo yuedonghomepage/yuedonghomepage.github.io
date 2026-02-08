@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<title>Learning Texture Generators for 3D Shape Collections from Internet Photo Sets</title>
+	<link rel="stylesheet" type="text/css" href="../../main.css" media="screen, print" /> 
+</head>
+<body class="PageContainer">
+<div class="PaperPage">
+	<div class="PublishInfo">
+			Published in
+			<span class="BookTitle">BMVC 2021</span>
+	</div>
+	<div class="TitleBar">
+	<h1>Learning Texture Generators for 3D Shape Collections <br/> from Internet Photo Sets</h1>
+	</div>
+	<div class="AuthorBar">
+	<ul class="AuthorList">
+			<li>
+				<span class="Author">
+				Rui Yu<sup>1,2</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://yuedong.shading.me/" target="_blank">
+				Yue Dong</a><sup>2</sup>
+			</li>
+			<li>
+				<span class="Author"><a href="http://www.cs.wm.edu/~ppeers/" target="_blank">
+				Pieter Peers</a><sup>3</sup></span>
+			</li>
+			<li>
+				<span class="Author"><a href="http://research.microsoft.com/users/xtong/xtong.html" target="_blank">
+				Xin Tong</a><sup>2</sup></span>
+			</li>
+		</ul>
+
+		<ul class="AuthorList">
+			<li>
+                <span class="Affiliation"><sup>1</sup>University of Science and Technology of China</span>
+            </li>
+			<li>
+				<span class="Affiliation"><sup>2</sup>Microsof Research Asia</span>
+			</li>
+
+			<li>
+				<span class="Affiliation"><sup>3</sup> College of William & Mary</span>
+			</li>
+		</ul>   
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="teaser.jpg" alt="rendering resutls" class="PaperFigure" />
+	</div>
+    <p class="FigureDescription">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        Rendering results of synthesized textures conditioned on the shape. For each
+example, we vary the shape, shown for 4 different views, over 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the columns (i.e., fixed z) and
+the texture over the rows (i.e., different z).</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+We present a method for decorating existing 3D shape collections by learning a tex-
+ture generator from internet photo collections. We condition the StyleGAN [15] texture
+generation by injecting multiview silhouettes of a 3D shape with SPADE-IN [23]. To
+bridge the inherent domain gap between the multiview silhouettes from the shape col-
+lection and the distribution of silhouettes in the photo collection, we employ a mixture
+of silhouettes from both collections for training. Furthermore, we do not assume each
+exemplar in the photo collection is viewed from more than one vantage point, and lever-
+age multiview discriminators to promote semantic view-consistency over the generated
+textures. We verify the efficacy of our design on three real-world 3D shape collections.
+
+ </p>
+   </div>
+
+    
+    <table class="TwoColumnPaper">
+      <tr>
+        <td>
+
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">GAN, Texture generation</p>
+
+    <h2 class="PaperSectionTitle">Paper and video</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="texgan.pdf">
+            <li>
+                <span class="FileTitle">Paper</span>
+                <span class="FileDesc">.pdf | 3.3 MB</span>             
+            </li>
+			</a>
+        </ul>
+    </div>
+
+    </td>
+    <td>
+            <h2 class="PaperSectionTitle">Trained model and code</h2>
+
+    <div class="PaperDownloadList">
+        <ul>
+            <a href="https://github.com/1996yr/TexGAN">
+            <li>
+                <span class="FileTitle">GitHub</span>
+                <span class="FileDesc">Code and model</span>             
+            </li>
+            </a>
+        </ul>
+    </div>
+
+
+	<h2 class="PaperSectionTitle">Acknowledgements</h2>
+    <p class="Acknowledgements">Pieter Peers was supported in part by NSF grant IIS-1909028.
+</p>
+
+
+
+	</td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>
